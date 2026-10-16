@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b1a1a"/><stop offset="0.55" stop-color="#6e1414"/><stop offset="1" stop-color="#4f0e0e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="420" fill="url(#bg)"/>
+  <g stroke="#e9a6a0" stroke-width="1" opacity="0.10">
+    <path d="M0 105 H1600"/><path d="M0 210 H1600"/><path d="M0 315 H1600"/>
+    <path d="M200 0 V420"/><path d="M400 0 V420"/><path d="M600 0 V420"/><path d="M800 0 V420"/><path d="M1000 0 V420"/><path d="M1200 0 V420"/><path d="M1400 0 V420"/>
+  </g>
+<circle cx="1300" cy="210" r="40" fill="none" stroke="#f3b8b2" stroke-width="1.3" opacity="0.50"/><circle cx="1300" cy="210" r="90" fill="none" stroke="#f3b8b2" stroke-width="1.3" opacity="0.43"/><circle cx="1300" cy="210" r="140" fill="none" stroke="#f3b8b2" stroke-width="1.3" opacity="0.36"/><circle cx="1300" cy="210" r="190" fill="none" stroke="#f3b8b2" stroke-width="1.3" opacity="0.29"/><circle cx="1300" cy="210" r="240" fill="none" stroke="#f3b8b2" stroke-width="1.3" opacity="0.22"/><circle cx="1300" cy="210" r="290" fill="none" stroke="#f3b8b2" stroke-width="1.3" opacity="0.15"/><circle cx="1382" cy="245" r="3.5" fill="#f3b8b2" opacity="0.6"/><circle cx="1218" cy="323" r="3.5" fill="#f3b8b2" opacity="0.6"/><circle cx="1176" cy="67" r="3.5" fill="#f3b8b2" opacity="0.6"/><circle cx="1470" cy="41" r="3.5" fill="#f3b8b2" opacity="0.6"/><circle cx="1339" cy="76" r="3.5" fill="#f3b8b2" opacity="0.6"/><circle cx="1350" cy="393" r="3.5" fill="#f3b8b2" opacity="0.6"/><circle cx="1013" cy="250" r="3.5" fill="#f3b8b2" opacity="0.6"/>
+</svg>

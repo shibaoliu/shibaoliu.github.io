@@ -5,18 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research | Shibao Liu</title>
 <meta name="description" content="Working papers and publications by Shibao Liu.">
-<link rel="canonical" href="https://shibaoliu.com/research.html">
+<link rel="canonical" href="https://shibaoliu.github.io/research.html">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Research | Shibao Liu">
 <meta property="og:description" content="Working papers and publications by Shibao Liu.">
-<meta property="og:url" content="https://shibaoliu.com/research.html">
+<meta property="og:url" content="https://shibaoliu.github.io/research.html">
+<meta property="og:image" content="https://shibaoliu.github.io/assets/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="color-scheme" content="light dark">
+<link rel="preload" href="assets/fonts/source-serif-4.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="alternate" type="application/atom+xml" title="Shibao Liu: Research" href="feed.xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
 <link rel="stylesheet" href="assets/site.css">
+
+
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -24,28 +31,45 @@
   <div class="wrap">
     <div class="wordmark"><a href="index.html">Shibao Liu</a></div>
     <nav class="site-nav" aria-label="Primary">
-<a href="index.html">Home</a>
-<a href="research.html" class="active" aria-current="page">Research</a>
-<a href="teaching.html">Teaching</a>
-<a href="cv.html">CV</a>
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="research.html" class="active" aria-current="page">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="presentations.html">Presentations</a>
     </nav>
   </div>
 </header>
-<div class="page-head"><div class="wrap">
-  <h1>Research</h1>
-  <p>My research examines corporate voluntary and mandatory disclosures, financial analysts, disclosure regulation, and their implications for capital markets.</p>
-</div></div>
-<main id="main" tabindex="-1" class="main" style="padding-top:0">
+<section class="page-hero ph-research">
   <div class="wrap">
-    <div class="toolbar">
-      <label class="visually-hidden" for="rt-search">Search papers</label>
-      <input id="rt-search" class="rt-search" type="search" placeholder="Search titles, coauthors, abstracts&hellip;">
-      <div class="chips" role="group" aria-label="Filter by status"><button type="button" class="chip" data-status="all" aria-pressed="true">All<span class="chip-n">15</span></button><button type="button" class="chip" data-status="review" aria-pressed="false">Under Review<span class="chip-n">1</span></button><button type="button" class="chip" data-status="working" aria-pressed="false">Working Paper<span class="chip-n">4</span></button><button type="button" class="chip" data-status="progress" aria-pressed="false">Work in Progress<span class="chip-n">6</span></button><button type="button" class="chip" data-status="published" aria-pressed="false">Published<span class="chip-n">4</span></button></div>
-      <span id="rt-count" class="rt-count" aria-live="polite"></span>
+    <div class="eyebrow">Research</div>
+    <h1>Working Papers &amp; Publications</h1>
+    <p class="lede">Corporate voluntary and mandatory disclosure, financial analysts, disclosure regulation, and their implications for capital markets.</p>
+    <p class="hero-stats">15 papers &middot; 1 under review &middot; 4 working paper &middot; 6 work in progress &middot; 4 published</p>
+  </div>
+</section>
+<div class="research-toolbar">
+  <div class="wrap rt-row">
+    <label class="visually-hidden" for="rt-search">Search papers</label>
+    <input id="rt-search" class="rt-search" type="search" placeholder="Search titles, coauthors, abstracts&hellip;">
+    <div class="chips" role="group" aria-label="Filter by status"><button type="button" class="chip" data-status="all" aria-pressed="true">All<span class="chip-n">15</span></button><button type="button" class="chip" data-status="review" aria-pressed="false">Under Review<span class="chip-n">1</span></button><button type="button" class="chip" data-status="working" aria-pressed="false">Working Paper<span class="chip-n">4</span></button><button type="button" class="chip" data-status="progress" aria-pressed="false">Work in Progress<span class="chip-n">6</span></button><button type="button" class="chip" data-status="published" aria-pressed="false">Published<span class="chip-n">4</span></button></div>
+    <div class="rt-sort">
+      <label for="rt-sort" class="rt-sort-label">Sort</label>
+      <select id="rt-sort" class="rt-select">
+        <option value="topic">By topic</option>
+        <option value="status">By status</option>
+        <option value="year">Newest first</option>
+        <option value="title">Title A&ndash;Z</option>
+      </select>
     </div>
+    <span id="rt-count" class="rt-count" aria-live="polite"></span>
+  </div>
+</div>
+<main id="main" tabindex="-1" class="main research-main">
+  <div class="wrap">
     <div id="paper-list">
-<section class="theme-group"><h2>Voluntary Disclosure &amp; Analysts</h2>
-<article class="paper" id="analysts-information" data-status="review" data-search="an empirical examination of the role of analysts&#x27; information in managers&#x27; voluntary disclosures somnath das under review at the accounting review  under review voluntary disclosure &amp; analysts this paper examines whether and how analysts&#x27; information influences managers&#x27; voluntary disclosure. prior literature using analyst coverage as a proxy for the information provided by analysts documents a crowd-out effect: lower coverage increases voluntary disclosure. however, there is little evidence on whether analyst information crowds in, that is, increases managers&#x27; voluntary disclosure. we focus on the component of analyst information unavailable to managers, using the measure of analysts&#x27; private information proposed by barron et al. (1998). as the amount of information unavailable to managers increases, so does voluntary disclosure. the crowd-in effect is stronger for firms with higher demand from analysts or managers and weaker for firms with higher costs of voluntary disclosure. further investigation suggests that the effect is driven in part by the macroeconomic information in analyst forecasts. overall, the results suggest that analyst information has both crowd-in and crowd-out effects on voluntary disclosure and that managers learn from analysts&#x27; information.">
+<section class="theme-group" data-theme="voluntary"><h2>Voluntary Disclosure &amp; Analysts</h2>
+<article class="paper" id="analysts-information" style="view-transition-name:p-analysts-information"
+  data-status="review" data-year="2026" data-order="0" data-title="an empirical examination of the role of analysts&#x27; information in managers&#x27; voluntary disclosures" data-search="an empirical examination of the role of analysts&#x27; information in managers&#x27; voluntary disclosures somnath das under review at the accounting review  under review voluntary disclosure &amp; analysts this paper examines whether and how analysts&#x27; information influences managers&#x27; voluntary disclosure. prior literature using analyst coverage as a proxy for the information provided by analysts documents a crowd-out effect: lower coverage increases voluntary disclosure. however, there is little evidence on whether analyst information crowds in, that is, increases managers&#x27; voluntary disclosure. we focus on the component of analyst information unavailable to managers, using the measure of analysts&#x27; private information proposed by barron et al. (1998). as the amount of information unavailable to managers increases, so does voluntary disclosure. the crowd-in effect is stronger for firms with higher demand from analysts or managers and weaker for firms with higher costs of voluntary disclosure. further investigation suggests that the effect is driven in part by the macroeconomic information in analyst forecasts. overall, the results suggest that analyst information has both crowd-in and crowd-out effects on voluntary disclosure and that managers learn from analysts&#x27; information.">
   <div class="paper-head"><span class="status-pill status-review">Under Review</span></div>
   <h3><a href="papers/analysts-information.html">An Empirical Examination of the Role of Analysts&#x27; Information in Managers&#x27; Voluntary Disclosures</a></h3>
   <p class="paper-authors">with Somnath Das</p>
@@ -59,7 +83,8 @@
   note = {Working paper; under review at The Accounting Review}
 }</script>
 </article>
-<article class="paper" id="investment-inefficiency" data-status="working" data-search="voluntary disclosure and investment inefficiency somnath das rustam zufarov   working paper voluntary disclosure &amp; analysts this paper examines the effect of voluntary disclosure on corporate investment efficiency. the role of voluntary disclosure in attenuating information asymmetries in capital markets is well documented, but whether a firm&#x27;s investment choices, and particularly its investment efficiency, are affected by managers&#x27; voluntary disclosures is less well understood. we document that voluntary disclosure is negatively associated with under-investment and positively associated with over-investment. results are consistent across several measures of voluntary disclosure and robust to an extensive set of controls. a staggered difference-in-differences design based on firms&#x27; inclusion in the s&amp;p 500 index suggests the results are less likely to be driven by endogeneity. managers&#x27; empire-building and propensity to make risky investments exacerbate the positive association between disclosure and over-investment, while the effect is mitigated for firms that operate in multiple segments, face stronger competition, hold more proprietary information, or employ higher-ability managers.">
+<article class="paper" id="investment-inefficiency" style="view-transition-name:p-investment-inefficiency"
+  data-status="working" data-year="2026" data-order="1" data-title="voluntary disclosure and investment inefficiency" data-search="voluntary disclosure and investment inefficiency somnath das rustam zufarov   working paper voluntary disclosure &amp; analysts this paper examines the effect of voluntary disclosure on corporate investment efficiency. the role of voluntary disclosure in attenuating information asymmetries in capital markets is well documented, but whether a firm&#x27;s investment choices, and particularly its investment efficiency, are affected by managers&#x27; voluntary disclosures is less well understood. we document that voluntary disclosure is negatively associated with under-investment and positively associated with over-investment. results are consistent across several measures of voluntary disclosure and robust to an extensive set of controls. a staggered difference-in-differences design based on firms&#x27; inclusion in the s&amp;p 500 index suggests the results are less likely to be driven by endogeneity. managers&#x27; empire-building and propensity to make risky investments exacerbate the positive association between disclosure and over-investment, while the effect is mitigated for firms that operate in multiple segments, face stronger competition, hold more proprietary information, or employ higher-ability managers.">
   <div class="paper-head"><span class="status-pill status-working">Working Paper</span></div>
   <h3><a href="papers/investment-inefficiency.html">Voluntary Disclosure and Investment Inefficiency</a></h3>
   <p class="paper-authors">with Somnath Das and Rustam Zufarov</p>
@@ -73,7 +98,8 @@
   note = {Working paper}
 }</script>
 </article>
-<article class="paper" id="blockholder-monitoring" data-status="working" data-search="do financial analysts complement blockholder monitoring? somnath das   working paper voluntary disclosure &amp; analysts we investigate whether the presence of financial analysts facilitates blockholder monitoring. prior work documents that blockholders and analysts each monitor firm outcomes. because analysts generate and disseminate relevant information, they may provide blockholders with additional information that enhances their ability to monitor. consistent with this view, the association between blockholder ownership and firm value is stronger in the presence of analysts. the enhancement is stronger for firms that are smaller, younger, riskier, and subject to higher agency costs of free cash flow. enhanced monitoring mitigates under-investment, lowers excess ceo compensation, and raises announcement returns in mergers. overall, the results suggest that analysts facilitate and complement monitoring by blockholders.">
+<article class="paper" id="blockholder-monitoring" style="view-transition-name:p-blockholder-monitoring"
+  data-status="working" data-year="2026" data-order="2" data-title="do financial analysts complement blockholder monitoring?" data-search="do financial analysts complement blockholder monitoring? somnath das   working paper voluntary disclosure &amp; analysts we investigate whether the presence of financial analysts facilitates blockholder monitoring. prior work documents that blockholders and analysts each monitor firm outcomes. because analysts generate and disseminate relevant information, they may provide blockholders with additional information that enhances their ability to monitor. consistent with this view, the association between blockholder ownership and firm value is stronger in the presence of analysts. the enhancement is stronger for firms that are smaller, younger, riskier, and subject to higher agency costs of free cash flow. enhanced monitoring mitigates under-investment, lowers excess ceo compensation, and raises announcement returns in mergers. overall, the results suggest that analysts facilitate and complement monitoring by blockholders.">
   <div class="paper-head"><span class="status-pill status-working">Working Paper</span></div>
   <h3><a href="papers/blockholder-monitoring.html">Do Financial Analysts Complement Blockholder Monitoring?</a></h3>
   <p class="paper-authors">with Somnath Das</p>
@@ -87,7 +113,8 @@
   note = {Working paper}
 }</script>
 </article>
-<article class="paper" id="ceo-tone" data-status="progress" data-search="ceo tone deviations and investor responses somnath das kai nguyen   work in progress voluntary disclosure &amp; analysts ">
+<article class="paper" id="ceo-tone" style="view-transition-name:p-ceo-tone"
+  data-status="progress" data-year="2026" data-order="3" data-title="ceo tone deviations and investor responses" data-search="ceo tone deviations and investor responses somnath das kai nguyen   work in progress voluntary disclosure &amp; analysts ">
   <div class="paper-head"><span class="status-pill status-progress">Work in Progress</span></div>
   <h3>CEO Tone Deviations and Investor Responses</h3>
   <p class="paper-authors">with Somnath Das and Kai Nguyen</p>
@@ -101,7 +128,8 @@
   note = {Working paper}
 }</script>
 </article>
-<article class="paper" id="cheap-talk" data-status="progress" data-search="the costs of cheap talk: earnings-call commitments, markets, and regulation    work in progress voluntary disclosure &amp; analysts ">
+<article class="paper" id="cheap-talk" style="view-transition-name:p-cheap-talk"
+  data-status="progress" data-year="2026" data-order="4" data-title="the costs of cheap talk: earnings-call commitments, markets, and regulation" data-search="the costs of cheap talk: earnings-call commitments, markets, and regulation    work in progress voluntary disclosure &amp; analysts ">
   <div class="paper-head"><span class="status-pill status-progress">Work in Progress</span></div>
   <h3>The Costs of Cheap Talk: Earnings-Call Commitments, Markets, and Regulation</h3>
   
@@ -115,8 +143,9 @@
   note = {Working paper}
 }</script>
 </article></section>
-<section class="theme-group"><h2>Mandatory Disclosure &amp; Regulation</h2>
-<article class="paper" id="risk-factor-discount-rates" data-status="progress" data-search="risk factor disclosures and discount rates    work in progress mandatory disclosure &amp; regulation ">
+<section class="theme-group" data-theme="mandatory"><h2>Mandatory Disclosure &amp; Regulation</h2>
+<article class="paper" id="risk-factor-discount-rates" style="view-transition-name:p-risk-factor-discount-rates"
+  data-status="progress" data-year="2026" data-order="5" data-title="risk factor disclosures and discount rates" data-search="risk factor disclosures and discount rates    work in progress mandatory disclosure &amp; regulation ">
   <div class="paper-head"><span class="status-pill status-progress">Work in Progress</span></div>
   <h3><a href="papers/risk-factor-discount-rates.html">Risk Factor Disclosures and Discount Rates</a></h3>
   
@@ -130,7 +159,8 @@
   note = {Working paper}
 }</script>
 </article>
-<article class="paper" id="risk-factor-internal-control" data-status="progress" data-search="risk factor disclosure and internal control    work in progress mandatory disclosure &amp; regulation ">
+<article class="paper" id="risk-factor-internal-control" style="view-transition-name:p-risk-factor-internal-control"
+  data-status="progress" data-year="2026" data-order="6" data-title="risk factor disclosure and internal control" data-search="risk factor disclosure and internal control    work in progress mandatory disclosure &amp; regulation ">
   <div class="paper-head"><span class="status-pill status-progress">Work in Progress</span></div>
   <h3>Risk Factor Disclosure and Internal Control</h3>
   
@@ -144,7 +174,8 @@
   note = {Working paper}
 }</script>
 </article>
-<article class="paper" id="cyber-deterrence" data-status="progress" data-search="disclosure as deterrence: evidence from the sec&#x27;s cybersecurity rule ying zhou   work in progress mandatory disclosure &amp; regulation ">
+<article class="paper" id="cyber-deterrence" style="view-transition-name:p-cyber-deterrence"
+  data-status="progress" data-year="2026" data-order="7" data-title="disclosure as deterrence: evidence from the sec&#x27;s cybersecurity rule" data-search="disclosure as deterrence: evidence from the sec&#x27;s cybersecurity rule ying zhou   work in progress mandatory disclosure &amp; regulation ">
   <div class="paper-head"><span class="status-pill status-progress">Work in Progress</span></div>
   <h3>Disclosure as Deterrence: Evidence from the SEC&#x27;s Cybersecurity Rule</h3>
   <p class="paper-authors">with Ying Zhou</p>
@@ -158,7 +189,8 @@
   note = {Working paper}
 }</script>
 </article>
-<article class="paper" id="missing-impairment" data-status="progress" data-search="the missing impairment: patent abandonment and knowledge capital loss    work in progress mandatory disclosure &amp; regulation ">
+<article class="paper" id="missing-impairment" style="view-transition-name:p-missing-impairment"
+  data-status="progress" data-year="2026" data-order="8" data-title="the missing impairment: patent abandonment and knowledge capital loss" data-search="the missing impairment: patent abandonment and knowledge capital loss    work in progress mandatory disclosure &amp; regulation ">
   <div class="paper-head"><span class="status-pill status-progress">Work in Progress</span></div>
   <h3>The Missing Impairment: Patent Abandonment and Knowledge Capital Loss</h3>
   
@@ -172,8 +204,9 @@
   note = {Working paper}
 }</script>
 </article></section>
-<section class="theme-group"><h2>Aggregate Earnings &amp; Methods</h2>
-<article class="paper" id="aggregate-earnings-gdp" data-status="working" data-search="the association between aggregate accounting earnings and growth in future gross domestic product: another look younghyun chun somnath das   working paper aggregate earnings &amp; methods ">
+<section class="theme-group" data-theme="methods"><h2>Aggregate Earnings &amp; Methods</h2>
+<article class="paper" id="aggregate-earnings-gdp" style="view-transition-name:p-aggregate-earnings-gdp"
+  data-status="working" data-year="2026" data-order="9" data-title="the association between aggregate accounting earnings and growth in future gross domestic product: another look" data-search="the association between aggregate accounting earnings and growth in future gross domestic product: another look younghyun chun somnath das   working paper aggregate earnings &amp; methods ">
   <div class="paper-head"><span class="status-pill status-working">Working Paper</span></div>
   <h3><a href="papers/aggregate-earnings-gdp.html">The Association Between Aggregate Accounting Earnings and Growth in Future Gross Domestic Product: Another Look</a></h3>
   <p class="paper-authors">with Younghyun Chun and Somnath Das</p>
@@ -187,7 +220,8 @@
   note = {Working paper}
 }</script>
 </article>
-<article class="paper" id="net-zero-coefficients" data-status="working" data-search="net zero coefficients in accounting research andrew j. leone siqi zheng   working paper aggregate earnings &amp; methods ">
+<article class="paper" id="net-zero-coefficients" style="view-transition-name:p-net-zero-coefficients"
+  data-status="working" data-year="2026" data-order="10" data-title="net zero coefficients in accounting research" data-search="net zero coefficients in accounting research andrew j. leone siqi zheng   working paper aggregate earnings &amp; methods ">
   <div class="paper-head"><span class="status-pill status-working">Working Paper</span></div>
   <h3><a href="papers/net-zero-coefficients.html">Net Zero Coefficients in Accounting Research</a></h3>
   <p class="paper-authors">with Andrew J. Leone and Siqi Zheng</p>
@@ -201,9 +235,10 @@
   note = {Working paper}
 }</script>
 </article></section>
-<section class="theme-group"><h2>Pre-Doctoral Publications</h2>
-<article class="paper" id="religious-diversity" data-status="published" data-search="religious diversity and regional development in china shuming bao zheng ying jianbo zhou  china economic review published pre-doctoral publications ">
-  <div class="paper-head"><span class="paper-kicker">China Economic Review · 2017</span><span class="status-pill status-published">Published</span></div>
+<section class="theme-group" data-theme="predoc"><h2>Pre-Doctoral Publications</h2>
+<article class="paper" id="religious-diversity" style="view-transition-name:p-religious-diversity"
+  data-status="published" data-year="2017" data-order="11" data-title="religious diversity and regional development in china" data-search="religious diversity and regional development in china shuming bao zheng ying jianbo zhou  china economic review published pre-doctoral publications ">
+  <div class="paper-head"><span class="paper-kicker">China Economic Review &middot; 2017</span><span class="status-pill status-published">Published</span></div>
   <h3>Religious Diversity and Regional Development in China</h3>
   <p class="paper-authors">with Shuming Bao, Zheng Ying and Jianbo Zhou</p>
   <p class="paper-authors"><em>China Economic Review</em>, 2017, 46: 1–9</p>
@@ -216,8 +251,9 @@
   year = {2017}
 }</script>
 </article>
-<article class="paper" id="financial-development-innovation" data-status="published" data-search="financial development models and economic growth under innovation heterogeneity: theory and evidence yihang shao zhaoyang zhang  management world published pre-doctoral publications ">
-  <div class="paper-head"><span class="paper-kicker">Management World · 2015</span><span class="status-pill status-published">Published</span></div>
+<article class="paper" id="financial-development-innovation" style="view-transition-name:p-financial-development-innovation"
+  data-status="published" data-year="2015" data-order="12" data-title="financial development models and economic growth under innovation heterogeneity: theory and evidence" data-search="financial development models and economic growth under innovation heterogeneity: theory and evidence yihang shao zhaoyang zhang  management world published pre-doctoral publications ">
+  <div class="paper-head"><span class="paper-kicker">Management World &middot; 2015</span><span class="status-pill status-published">Published</span></div>
   <h3>Financial Development Models and Economic Growth under Innovation Heterogeneity: Theory and Evidence</h3>
   <p class="paper-authors">with Yihang Shao and Zhaoyang Zhang</p>
   <p class="paper-authors"><em>Management World</em>, 2015, (11): 29–39</p>
@@ -230,8 +266,9 @@
   year = {2015}
 }</script>
 </article>
-<article class="paper" id="financial-development-regional" data-status="published" data-search="regional differences and dynamic correlation between financial development and economic growth: an analysis based on dynamic panel data models shuming bao  public finance research published pre-doctoral publications ">
-  <div class="paper-head"><span class="paper-kicker">Public Finance Research · 2014</span><span class="status-pill status-published">Published</span></div>
+<article class="paper" id="financial-development-regional" style="view-transition-name:p-financial-development-regional"
+  data-status="published" data-year="2014" data-order="13" data-title="regional differences and dynamic correlation between financial development and economic growth: an analysis based on dynamic panel data models" data-search="regional differences and dynamic correlation between financial development and economic growth: an analysis based on dynamic panel data models shuming bao  public finance research published pre-doctoral publications ">
+  <div class="paper-head"><span class="paper-kicker">Public Finance Research &middot; 2014</span><span class="status-pill status-published">Published</span></div>
   <h3>Regional Differences and Dynamic Correlation between Financial Development and Economic Growth: An Analysis Based on Dynamic Panel Data Models</h3>
   <p class="paper-authors">with Shuming Bao</p>
   <p class="paper-authors"><em>Public Finance Research</em>, 2014, (5): 24–28</p>
@@ -244,8 +281,9 @@
   year = {2014}
 }</script>
 </article>
-<article class="paper" id="bond-stock-efficiency" data-status="published" data-search="comparison of operational efficiency between china&#x27;s corporate bond market and stock market: based on the sharpe ratio and bdss model zhiqiang ye shunming zhang  system engineering published pre-doctoral publications ">
-  <div class="paper-head"><span class="paper-kicker">System Engineering · 2010</span><span class="status-pill status-published">Published</span></div>
+<article class="paper" id="bond-stock-efficiency" style="view-transition-name:p-bond-stock-efficiency"
+  data-status="published" data-year="2010" data-order="14" data-title="comparison of operational efficiency between china&#x27;s corporate bond market and stock market: based on the sharpe ratio and bdss model" data-search="comparison of operational efficiency between china&#x27;s corporate bond market and stock market: based on the sharpe ratio and bdss model zhiqiang ye shunming zhang  system engineering published pre-doctoral publications ">
+  <div class="paper-head"><span class="paper-kicker">System Engineering &middot; 2010</span><span class="status-pill status-published">Published</span></div>
   <h3>Comparison of Operational Efficiency between China&#x27;s Corporate Bond Market and Stock Market: Based on the Sharpe Ratio and BDSS Model</h3>
   <p class="paper-authors">with Zhiqiang Ye and Shunming Zhang</p>
   <p class="paper-authors"><em>System Engineering</em>, 2010, (12): 45–51</p>
@@ -258,8 +296,9 @@
   year = {2010}
 }</script>
 </article></section>
-      <p id="rt-empty" class="empty-state" hidden>No papers match that search.</p>
     </div>
+    <div id="flat-list" hidden></div>
+    <p id="rt-empty" class="empty-state" hidden>No papers match that search.</p>
     <p class="footnote">* Presented by a coauthor.</p>
   </div>
 </main>

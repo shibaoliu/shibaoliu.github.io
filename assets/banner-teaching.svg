@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b1a1a"/><stop offset="0.55" stop-color="#6e1414"/><stop offset="1" stop-color="#4f0e0e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="420" fill="url(#bg)"/>
+  <g stroke="#e9a6a0" stroke-width="1" opacity="0.10">
+    <path d="M0 105 H1600"/><path d="M0 210 H1600"/><path d="M0 315 H1600"/>
+    <path d="M200 0 V420"/><path d="M400 0 V420"/><path d="M600 0 V420"/><path d="M800 0 V420"/><path d="M1000 0 V420"/><path d="M1200 0 V420"/><path d="M1400 0 V420"/>
+  </g>
+<path d="M1210 420 a80 80 0 0 1 160 0" fill="none" stroke="#f3b8b2" stroke-width="1.4" opacity="0.50"/><path d="M1162 420 a128 128 0 0 1 256 0" fill="none" stroke="#f3b8b2" stroke-width="1.4" opacity="0.44"/><path d="M1114 420 a176 176 0 0 1 352 0" fill="none" stroke="#f3b8b2" stroke-width="1.4" opacity="0.38"/><path d="M1066 420 a224 224 0 0 1 448 0" fill="none" stroke="#f3b8b2" stroke-width="1.4" opacity="0.32"/><path d="M1018 420 a272 272 0 0 1 544 0" fill="none" stroke="#f3b8b2" stroke-width="1.4" opacity="0.26"/><path d="M970 420 a320 320 0 0 1 640 0" fill="none" stroke="#f3b8b2" stroke-width="1.4" opacity="0.20"/><path d="M922 420 a368 368 0 0 1 736 0" fill="none" stroke="#f3b8b2" stroke-width="1.4" opacity="0.14"/>
+</svg>

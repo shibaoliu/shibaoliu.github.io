@@ -1,6 +1,6 @@
 {
   "name": "Shibao Liu",
-  "domain": "https://shibaoliu.com",
+  "domain": "https://shibaoliu.github.io",
   "title": "Assistant Professor of Accounting",
   "affiliation": "Florida Institute of Technology",
   "affiliation_url": "https://www.fit.edu/",
@@ -8,23 +8,43 @@
   "photo": "",
   "lede": "I study corporate disclosure: what managers choose to tell investors, what regulators require them to tell, and how financial analysts, blockholders, and capital markets use that information.",
   "links": [
-    {"label": "Email", "url": "mailto:lius@fit.edu"},
-    {"label": "Google Scholar", "url": ""},
-    {"label": "SSRN", "url": ""},
-    {"label": "ORCID", "url": ""},
-    {"label": "LinkedIn", "url": ""},
-    {"label": "Curriculum Vitae", "url": "cv/CV_Shibao_Liu.pdf"}
+    {
+      "label": "Email",
+      "url": "mailto:lius@fit.edu"
+    },
+    {
+      "label": "Google Scholar",
+      "url": ""
+    },
+    {
+      "label": "SSRN",
+      "url": ""
+    },
+    {
+      "label": "ORCID",
+      "url": ""
+    },
+    {
+      "label": "LinkedIn",
+      "url": ""
+    },
+    {
+      "label": "Curriculum Vitae",
+      "url": "cv/CV_Shibao_Liu.pdf"
+    }
   ],
   "news": [
     {
       "tag": "Under Review",
       "paper": "analysts-information",
-      "meta": "The Accounting Review"
+      "meta": "The Accounting Review",
+      "summary": "Analysts' private information crowds in managers' voluntary disclosure"
     },
     {
       "tag": "Presented",
       "paper": "investment-inefficiency",
-      "meta": "2026 AAA Global Connect, August 2026"
+      "meta": "2026 AAA Global Connect, August 2026",
+      "summary": "Voluntary disclosure relates to less under-investment but more over-investment"
     },
     {
       "tag": "Award",
@@ -39,11 +59,26 @@
     "At Florida Tech, I teach Introduction to Financial Accounting and Introduction to Managerial Accounting."
   ],
   "education": [
-    {"degree": "Ph.D., Accounting", "school": "University of Illinois Chicago, 2025"},
-    {"degree": "M.S., Accounting and Finance", "school": "University of North America"},
-    {"degree": "M.S., Finance", "school": "Drexel University"},
-    {"degree": "Visiting Scholar", "school": "University of Michigan, Ann Arbor"},
-    {"degree": "Ph.D., Economics; B.A., Finance", "school": "Xiamen University"}
+    {
+      "degree": "Ph.D., Accounting",
+      "school": "University of Illinois Chicago, 2025"
+    },
+    {
+      "degree": "M.S., Accounting and Finance",
+      "school": "University of North America"
+    },
+    {
+      "degree": "M.S., Finance",
+      "school": "Drexel University"
+    },
+    {
+      "degree": "Visiting Scholar",
+      "school": "University of Michigan, Ann Arbor"
+    },
+    {
+      "degree": "Ph.D., Economics; B.A., Finance",
+      "school": "Xiamen University"
+    }
   ],
   "interests": [
     "Voluntary Disclosure",
@@ -60,44 +95,252 @@
     "Beta Gamma Sigma"
   ],
   "service": [
-    "<strong>Ad hoc reviewer</strong>, AAA Annual Meeting, FARS Midyear Meeting, AAA Spark Meeting, Hawaii Accounting Research Conference, MAS Midyear Meeting",
-    "<strong>Committee member</strong>, Graduate Students Affairs Committee, Florida Tech"
+    "<strong>Committee member</strong>, Graduate Students Affairs Committee, Florida Tech (2026&ndash;2027)",
+    "<strong>Program redevelopment</strong>, Master of Accounting, Florida Tech (2025&ndash;2026)"
   ],
-  "address": ["Florida Institute of Technology", "Melbourne, FL"],
+  "address": [
+    "Florida Institute of Technology",
+    "Melbourne, FL"
+  ],
   "teaching": [
     {
       "institution": "Florida Institute of Technology",
       "role": "Instructor",
       "courses": [
-        {"name": "Introduction to Financial Accounting", "level": "Undergraduate core", "when": "2025–2026", "rating": "Mean 4.4/5 · median 5/5"},
-        {"name": "Introduction to Managerial Accounting", "level": "Undergraduate core", "when": "2025–2026", "rating": "Mean 4.7/5 · median 5/5"}
+        {
+          "name": "Introduction to Financial Accounting",
+          "level": "Undergraduate core",
+          "when": "2025–2026",
+          "rating": "Mean 4.4/5 · median 5/5"
+        },
+        {
+          "name": "Introduction to Managerial Accounting",
+          "level": "Undergraduate core",
+          "when": "2025–2026",
+          "rating": "Mean 4.7/5 · median 5/5"
+        }
       ]
     },
     {
       "institution": "University of Illinois Chicago",
       "role": "Instructor",
       "courses": [
-        {"name": "Introduction to Financial Accounting", "level": "Undergraduate core", "when": "Fall 2023", "rating": "Mean 4.4/5 · median 5/5 · 98.6% response rate"}
+        {
+          "name": "Introduction to Financial Accounting",
+          "level": "Undergraduate core",
+          "when": "Fall 2023",
+          "rating": "Mean 4.4/5 · median 5/5 · 98.6% response rate"
+        }
       ]
     },
     {
       "institution": "University of Illinois Chicago",
       "role": "Teaching Assistant",
       "courses": [
-        {"name": "Intermediate Financial Accounting", "level": "Undergraduate/graduate core", "when": "2024–2025"},
-        {"name": "Introduction to Financial Accounting", "level": "Undergraduate core", "when": "2022–2024"}
+        {
+          "name": "Intermediate Financial Accounting",
+          "level": "Undergraduate/graduate core",
+          "when": "2024–2025"
+        },
+        {
+          "name": "Introduction to Financial Accounting",
+          "level": "Undergraduate core",
+          "when": "2022–2024"
+        }
       ]
     },
     {
       "institution": "University of Michigan",
       "role": "Teaching Assistant",
       "courses": [
-        {"name": "Topics in Macro Finance", "level": "Ph.D. core", "when": "2012–2013"}
+        {
+          "name": "Topics in Macro Finance",
+          "level": "Ph.D. core",
+          "when": "2012–2013"
+        }
       ]
     }
   ],
   "teaching_notes": [
     "2025 Inclusive Education Scholars Certificate, Center for the Advancement of Teaching Excellence, UIC.",
     "Book development consultant, McGraw Hill: AAA focus group (invited, 2024) and review of <em>Financial and Managerial Accounting: A Data Analytics Approach</em>."
+  ],
+  "role_lines": [
+    "Assistant Professor of Accounting, Florida Institute of Technology",
+    "Ph.D. in Accounting, University of Illinois Chicago, 2025"
+  ],
+  "affiliations": [
+    "Florida Institute of Technology",
+    "American Accounting Association",
+    "AAA Financial Accounting and Reporting Section"
+  ],
+  "reviewing": [
+    "<strong>Ad hoc reviewer</strong>, AAA Annual Meeting",
+    "<strong>Ad hoc reviewer</strong>, FARS Midyear Meeting",
+    "<strong>Ad hoc reviewer</strong>, AAA Spark Meeting",
+    "<strong>Ad hoc reviewer</strong>, Hawaii Accounting Research Conference"
+  ],
+  "analytics_id": "",
+  "presentations": [
+    [
+      "Florida Accounting Symposium",
+      "Sep 2026",
+      ""
+    ],
+    [
+      "Accountability in a Sustainable World Conference",
+      "Sep 2026",
+      ""
+    ],
+    [
+      "AAA Global Connect",
+      "Aug 2026",
+      "Presenter"
+    ],
+    [
+      "UIC Accounting Research Conference",
+      "Aug 2026",
+      ""
+    ],
+    [
+      "AAA Spark Meeting",
+      "Jun 2026",
+      "Presenter, discussant, moderator"
+    ],
+    [
+      "FARS Midyear Meeting",
+      "Jan 2026",
+      ""
+    ],
+    [
+      "Accountability in a Sustainable World Conference",
+      "Sep 2025",
+      ""
+    ],
+    [
+      "UIC Accounting Research Conference",
+      "Aug 2025",
+      ""
+    ],
+    [
+      "Rutgers Accounting Doctoral Symposium",
+      "May 2025",
+      ""
+    ],
+    [
+      "Contemporary Accounting Research Conference",
+      "Nov 2024",
+      ""
+    ],
+    [
+      "CAR Conference Doctoral Consortium",
+      "Oct 2024",
+      ""
+    ],
+    [
+      "Accountability in a Sustainable World Conference",
+      "Sep 2024",
+      ""
+    ],
+    [
+      "UIC Accounting Research Conference",
+      "Sep 2024",
+      ""
+    ],
+    [
+      "AAA Annual Meeting",
+      "Aug 2024",
+      "Presenter"
+    ],
+    [
+      "Kellogg Accounting Conference",
+      "Aug 2024",
+      ""
+    ],
+    [
+      "AAA/Deloitte Foundation/J. Michael Cook Doctoral Consortium",
+      "Jun 2024",
+      "Presenter"
+    ],
+    [
+      "AAA Spark Meeting",
+      "Jun 2024",
+      "Presenter, moderator"
+    ],
+    [
+      "Wharton Spring Accounting Conference",
+      "May 2024",
+      ""
+    ],
+    [
+      "Rutgers Accounting Doctoral Symposium",
+      "Apr 2024",
+      ""
+    ],
+    [
+      "Kellogg Accounting Conference",
+      "Sep 2023",
+      ""
+    ],
+    [
+      "Accountability in a Sustainable World Conference",
+      "Sep 2023",
+      ""
+    ],
+    [
+      "UIC Accounting Research Conference",
+      "Sep 2023",
+      ""
+    ],
+    [
+      "AAA Annual Meeting",
+      "Aug 2023",
+      "Discussant, moderator"
+    ],
+    [
+      "AAA Spark Meeting",
+      "Jun 2023",
+      "Presenter, moderator"
+    ],
+    [
+      "FARS Doctoral Consortium",
+      "Jan 2023",
+      ""
+    ],
+    [
+      "FARS Midyear Meeting",
+      "Jan 2023",
+      ""
+    ],
+    [
+      "Management Accounting Section Midyear Meeting",
+      "Jan 2023",
+      "Discussant"
+    ],
+    [
+      "UIC Accounting Research Conference",
+      "Sep 2022",
+      ""
+    ],
+    [
+      "FARS and Journal of Financial Reporting 2nd Mini-Conference",
+      "Mar 2022",
+      ""
+    ],
+    [
+      "FARS Midyear Meeting",
+      "Jan 2022",
+      ""
+    ],
+    [
+      "UIC Accounting Research Conference",
+      "Sep 2021",
+      ""
+    ],
+    [
+      "IRES Graduate Workshop, Chapman University",
+      "Jun 2013",
+      "Presenter"
+    ]
   ]
 }

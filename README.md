@@ -18,8 +18,15 @@ Never hand-edit the generated `.html` files; the next build overwrites them.
 - **Profile links:** fill the empty `url` fields (Google Scholar, SSRN, ORCID, LinkedIn) in `data/site.json`.
 - **Photo:** put a portrait (4:5, about 520x650) at `photos/portrait.jpg` and set `"photo": "photos/portrait.jpg"`.
 - **CV PDF:** save it as `cv/CV_Shibao_Liu.pdf`. Until it exists, the CV button links to the CV page.
-- **Colour:** change `--accent` at the top of `assets/site.css`.
+- **Colour:** change `--accent` at the top of `assets/site.css` (and the colour in the banner SVGs).
+- **Presentations:** the `presentations` list in `data/site.json` ([name, date, role]).
+- **Analytics:** set `analytics_id` in `data/site.json` to a Google Analytics ID (G-XXXX) to turn it on.
+- **R&R tracker tab:** appears in the nav automatically once `rr-tracker/index.html` exists.
 
-## Custom domain (shibaoliu.com)
+Fonts (Source Serif 4, Inter, JetBrains Mono) are self-hosted under the SIL Open Font License.
 
-After registering the domain: add a file `CNAME` containing `shibaoliu.com`, push, then in the repo's Settings → Pages set the custom domain and tick "Enforce HTTPS". At the registrar, add A records for `@` to 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153 and a CNAME record `www` → `shibaoliu.github.io`.
+## Custom domain (optional, later)
+
+The site lives at https://shibaoliu.github.io. If you ever register a domain such as shibaoliu.com,
+
+add a file `CNAME` containing `shibaoliu.com`, push, then in the repo's Settings → Pages set the custom domain and tick "Enforce HTTPS". At the registrar, add A records for `@` to 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153 and a CNAME record `www` → `shibaoliu.github.io`.
