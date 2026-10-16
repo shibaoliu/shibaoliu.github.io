@@ -1,0 +1,103 @@
+{
+  "name": "Shibao Liu",
+  "domain": "https://shibaoliu.com",
+  "title": "Assistant Professor of Accounting",
+  "affiliation": "Florida Institute of Technology",
+  "affiliation_url": "https://www.fit.edu/",
+  "email": "lius@fit.edu",
+  "photo": "",
+  "lede": "I study corporate disclosure: what managers choose to tell investors, what regulators require them to tell, and how financial analysts, blockholders, and capital markets use that information.",
+  "links": [
+    {"label": "Email", "url": "mailto:lius@fit.edu"},
+    {"label": "Google Scholar", "url": ""},
+    {"label": "SSRN", "url": ""},
+    {"label": "ORCID", "url": ""},
+    {"label": "LinkedIn", "url": ""},
+    {"label": "Curriculum Vitae", "url": "cv/CV_Shibao_Liu.pdf"}
+  ],
+  "news": [
+    {
+      "tag": "Under Review",
+      "paper": "analysts-information",
+      "meta": "The Accounting Review"
+    },
+    {
+      "tag": "Presented",
+      "paper": "investment-inefficiency",
+      "meta": "2026 AAA Global Connect, August 2026"
+    },
+    {
+      "tag": "Award",
+      "title": "FARS Excellence in Reviewing Award",
+      "meta": "AAA Financial Accounting and Reporting Section, 2025"
+    }
+  ],
+  "about": [
+    "I am an Assistant Professor of Accounting at the <a href=\"https://www.fit.edu/\" target=\"_blank\" rel=\"noopener\">Florida Institute of Technology</a>. I received my Ph.D. in Accounting from the University of Illinois Chicago in 2025.",
+    "My research examines corporate voluntary and mandatory disclosures, financial analysts, disclosure regulation, and their implications for capital markets. Current projects study how analysts' information shapes managers' disclosure choices, how disclosure relates to investment efficiency, risk factor disclosure, the SEC's cybersecurity disclosure rule, and research-methods questions in accounting.",
+    "Before my doctoral work in accounting, I earned a Ph.D. in Economics and a B.A. in Finance from Xiamen University, was a visiting scholar at the University of Michigan, and worked as an accounting and financial analyst at Freddie Mac.",
+    "At Florida Tech, I teach Introduction to Financial Accounting and Introduction to Managerial Accounting."
+  ],
+  "education": [
+    {"degree": "Ph.D., Accounting", "school": "University of Illinois Chicago, 2025"},
+    {"degree": "M.S., Accounting and Finance", "school": "University of North America"},
+    {"degree": "M.S., Finance", "school": "Drexel University"},
+    {"degree": "Visiting Scholar", "school": "University of Michigan, Ann Arbor"},
+    {"degree": "Ph.D., Economics; B.A., Finance", "school": "Xiamen University"}
+  ],
+  "interests": [
+    "Voluntary Disclosure",
+    "Mandatory Disclosure & Regulation",
+    "Financial Analysts",
+    "Capital Markets",
+    "Corporate Governance",
+    "Research Methods"
+  ],
+  "awards": [
+    "FARS Excellence in Reviewing Award, 2023 & 2025",
+    "AAA/Deloitte Foundation/J. Michael Cook Doctoral Consortium Fellow, 2024",
+    "AAA FARS Doctoral Consortium Fellow and FARS Scholarship, 2023",
+    "Beta Gamma Sigma"
+  ],
+  "service": [
+    "<strong>Ad hoc reviewer</strong>, AAA Annual Meeting, FARS Midyear Meeting, AAA Spark Meeting, Hawaii Accounting Research Conference, MAS Midyear Meeting",
+    "<strong>Committee member</strong>, Graduate Students Affairs Committee, Florida Tech"
+  ],
+  "address": ["Florida Institute of Technology", "Melbourne, FL"],
+  "teaching": [
+    {
+      "institution": "Florida Institute of Technology",
+      "role": "Instructor",
+      "courses": [
+        {"name": "Introduction to Financial Accounting", "level": "Undergraduate core", "when": "2025–2026", "rating": "Mean 4.4/5 · median 5/5"},
+        {"name": "Introduction to Managerial Accounting", "level": "Undergraduate core", "when": "2025–2026", "rating": "Mean 4.7/5 · median 5/5"}
+      ]
+    },
+    {
+      "institution": "University of Illinois Chicago",
+      "role": "Instructor",
+      "courses": [
+        {"name": "Introduction to Financial Accounting", "level": "Undergraduate core", "when": "Fall 2023", "rating": "Mean 4.4/5 · median 5/5 · 98.6% response rate"}
+      ]
+    },
+    {
+      "institution": "University of Illinois Chicago",
+      "role": "Teaching Assistant",
+      "courses": [
+        {"name": "Intermediate Financial Accounting", "level": "Undergraduate/graduate core", "when": "2024–2025"},
+        {"name": "Introduction to Financial Accounting", "level": "Undergraduate core", "when": "2022–2024"}
+      ]
+    },
+    {
+      "institution": "University of Michigan",
+      "role": "Teaching Assistant",
+      "courses": [
+        {"name": "Topics in Macro Finance", "level": "Ph.D. core", "when": "2012–2013"}
+      ]
+    }
+  ],
+  "teaching_notes": [
+    "2025 Inclusive Education Scholars Certificate, Center for the Advancement of Teaching Excellence, UIC.",
+    "Book development consultant, McGraw Hill: AAA focus group (invited, 2024) and review of <em>Financial and Managerial Accounting: A Data Analytics Approach</em>."
+  ]
+}
