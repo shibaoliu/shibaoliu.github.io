@@ -24,7 +24,10 @@ urllib3.disable_warnings()
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 UA = "shibaoliu.github.io RR tracker (contact: tanglin817@gmail.com)"
-MAX_AUTHORS = int(sys.argv[1]) if len(sys.argv) > 1 else 150  # 0 = every eligible author
+# argv[1]: number of authors (0 = every eligible author) or "new" = only authors not in the existing
+# scan_fetch_log.csv; "new" appends to rr_candidates.json / scan_fetch_log.csv, keeping candidate ids stable
+NEW_ONLY = len(sys.argv) > 1 and sys.argv[1] == "new"
+MAX_AUTHORS = 0 if NEW_ONLY else (int(sys.argv[1]) if len(sys.argv) > 1 else 150)
 SEED = 20261015
 TIMEOUT = 15
 TODAY = datetime.date.today().isoformat()
@@ -356,6 +359,12 @@ def main():
         if good:
             elig[aid] = good[:4]
     ids = sorted(elig)
+    prev_c, prev_log = [], []
+    if NEW_ONLY:
+        prev_log = list(csv.DictReader(open(os.path.join(DATA, "scan_fetch_log.csv"))))
+        prev_c = json.load(open(os.path.join(DATA, "rr_candidates.json")))
+        done = {r["author_id"] for r in prev_log}
+        ids = [i for i in ids if i not in done]
     random.Random(SEED).shuffle(ids)
     ids = ids[:MAX_AUTHORS] if MAX_AUTHORS else ids
     print("accounting-5 authors with >=1 crawlable URL: %d; scanning %d" % (len(elig), len(ids)), flush=True)
@@ -373,14 +382,15 @@ def main():
     for r in csv.DictReader(open(os.path.join(DATA, "cohort_works.csv"))):
         pub.setdefault(nz(r["title"]), (r["journal"], r["publication_year"], r["doi"]))
     keys = list(pub)
+    base = max([c["candidate_id"] for c in prev_c] or [0])
     for i, c in enumerate(allc):
-        c["candidate_id"] = i + 1
+        c["candidate_id"] = base + i + 1
         m = difflib.get_close_matches(nz(c["title"]), keys, n=1, cutoff=0.85) if len(nz(c["title"])) >= 20 else []
         c["already_published_match"] = ("%s %s %s" % pub[m[0]]) if m else ""
-    json.dump(allc, open(os.path.join(DATA, "rr_candidates.json"), "w"), indent=1, ensure_ascii=False)
+    json.dump(prev_c + allc, open(os.path.join(DATA, "rr_candidates.json"), "w"), indent=1, ensure_ascii=False)
     with open(os.path.join(DATA, "scan_fetch_log.csv"), "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=["author_id", "url", "final_url", "status", "kind", "chars"], extrasaction="ignore")
-        w.writeheader(); w.writerows(_log)
+        w.writeheader(); w.writerows(prev_log + _log)
     st = defaultdict(int)
     for r in _log:
         st[r["status"]] += 1

@@ -13,7 +13,7 @@ data/                         outputs (CSV/JSON)
 logs/                         one log per step
 ```
 
-Run order (full run): `python3 pipeline/01_cohort.py && python3 pipeline/02_homepages.py && python3 pipeline/02c_directories.py && python3 pipeline/03_scan.py 0 && python3 pipeline/04_staleness.py`, then the independent review writes `data/rr_review.json`, then `python3 pipeline/05_publish.py && python3 ../build.py`.
+Run order (full run): `python3 pipeline/01_cohort.py && python3 pipeline/01b_local_dois.py && python3 pipeline/02_homepages.py && python3 pipeline/02c_directories.py && python3 pipeline/03_scan.py 0 && python3 pipeline/04_staleness.py`, then the independent review writes `data/rr_review.json`, then `python3 pipeline/05_publish.py && python3 ../build.py`.
 
 ## Step 1: cohort (`01_cohort.py`)
 
@@ -170,3 +170,23 @@ A candidate counts as already published when Crossref has a journal article, in 
 - Only candidates with verdict `publish` in `data/rr_review.json` reach `data/rr_public.json`, which is the only tracker data file that is committed.
 - The review is done by independent agents with their own fetches. Each confirms that the page is the author's, that it shows a current R&R at the named journal, the exact title on the page, and no published version on Crossref or the web.
 - `build.py` generates the AcctRes page (`rr-tracker/index.html`) from `rr_public.json`.
+
+## Step 1b: local DOI lists (`01b_local_dois.py`), added 2026-10-16
+
+- **Source:** the author's per-journal, per-year DOI lists in `meta_analysis/DOIs/` (TAR, JAR, JAE, CAR, RAST), filed by print year.
+- **Gap:** 613 of their 2021-2026 DOIs were not in step 1. Most are papers printed in 2021+ but dated earlier by OpenAlex, which uses first online publication.
+- **Lookup:** OpenAlex singleton lookups, one DOI per request. These still answered after the daily list-query budget was spent.
+  - 558 DOIs found, and 219 of them carry authors; the rest look like front matter and book reviews.
+  - The step added 141 new author ids, and 23 Management-Science-only authors became accounting-5. The accounting-5 total is now 2,970 author ids.
+- **Follow-up:** ORCID, the directories and `03_scan.py new` (new authors only) were re-run. They found 4 new candidates, which went to independent review.
+
+## Step 6: paper links (`06_links.py`), added 2026-10-16
+
+- **Order:**
+  1. The anchor on the author's own page whose text is the title.
+  2. Otherwise, the Crossref posted-content (SSRN) record, matched on title (similarity of at least 0.93) and the author's family name.
+- **Independent link check of 59 links:** 51 OK, 5 wrong, 3 unreachable.
+  - All 5 wrong links came from a third rule, "first paper-like link within 400 characters after the title", which picked the next paper's link. That rule is removed.
+  - One expired download.ssrn.com link was replaced by its abstract page.
+- **Kept:** only checked links (52), stored in `data/verified_links.json`, which `05_publish.py` merges.
+- **Matching:** links are matched on title and URL together, because one wrong link shared its URL with a correct entry.

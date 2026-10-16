@@ -1,12 +1,12 @@
 {
  "generated": "2026-10-16",
  "coverage": {
-  "authors_total": 2788,
-  "authors_reached": 1074
+  "authors_total": 2952,
+  "authors_reached": 1137
  },
  "method": [
-  "Authors: everyone with at least one article in JAE, JAR, TAR, CAR or RAST published 2021–2026 (OpenAlex), 2,788 people.",
-  "Pages: the personal website listed on the author's ORCID record, and the faculty profile (plus any personal site or CV it links to) found through a curated list of 148 accounting faculty directories. 1,074 of 2,788 authors had at least one page that could be read (38.5%); the rest list no site we could find, or their pages block automated reading.",
+  "Authors: everyone with at least one article in JAE, JAR, TAR, CAR or RAST published 2021–2026, from OpenAlex and the journals' own issue lists, 2,952 people.",
+  "Pages: the personal website listed on the author's ORCID record, and the faculty profile (plus any personal site or CV it links to) found through a curated list of 148 accounting faculty directories. 1,137 of 2,952 authors had at least one page that could be read (38.5%); the rest list no site we could find, or their pages block automated reading.",
   "A paper is listed only when the page itself attaches a revise-and-resubmit phrase to one of the six journals (for example, “R&amp;R at The Accounting Review”). The exact wording is shown under each entry.",
   "Papers that Crossref or OpenAlex show as already published are removed, and every entry was checked against the live page before it was listed.",
   "Missing or out-of-date entry? Email <a href=\"mailto:lius@fit.edu\">lius@fit.edu</a> with the page that lists it."
@@ -23,7 +23,9 @@
     }
    ],
    "title": "Disclosure Policy and Enforcement: The Role of Corporate Boards",
-   "journal": "CAR"
+   "journal": "CAR",
+   "paper_url": "https://doi.org/10.2139/ssrn.4583135",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -36,7 +38,9 @@
     }
    ],
    "title": "Does Aggressive Tax Planning Discourage Government Subsidy Applications? Evidence from the Paycheck Protection Program",
-   "journal": "CAR"
+   "journal": "CAR",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5007771",
+   "paper_url_source": "author page: https://sites.google.com/view/qiangwu/working-papers"
   },
   {
    "authors": [
@@ -49,7 +53,9 @@
     }
    ],
    "title": "Information Dissemination Technologies and Syndicated Loan Structure: Evidence from EDGAR",
-   "journal": "CAR"
+   "journal": "CAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -62,7 +68,9 @@
     }
    ],
    "title": "Long-Term Earnings Growth Forecast Initiations for Loss Firms",
-   "journal": "CAR"
+   "journal": "CAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -75,7 +83,9 @@
     }
    ],
    "title": "Management Forecast Policy and Liquidity Provision by Individual Investors",
-   "journal": "CAR"
+   "journal": "CAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -88,7 +98,9 @@
     }
    ],
    "title": "More Constraints, More Consensus? How Regulation Shapes Investor Information Asymmetry",
-   "journal": "CAR"
+   "journal": "CAR",
+   "paper_url": "https://johnmbarrios.com/research.html#regulation-consensus",
+   "paper_url_source": "author page: https://johnmbarrios.com/research.html"
   },
   {
    "authors": [
@@ -101,7 +113,9 @@
     }
    ],
    "title": "Prompting Information Acquisition as a Newswire Journalist",
-   "journal": "CAR"
+   "journal": "CAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -114,7 +128,9 @@
     }
    ],
    "title": "Public Peer Firm Information in Mergers and Acquisitions of Privately Held Targets",
-   "journal": "CAR"
+   "journal": "CAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -127,7 +143,9 @@
     }
    ],
    "title": "Shareholder Priming: Evidence from Say on Pay",
-   "journal": "CAR"
+   "journal": "CAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -140,7 +158,9 @@
     }
    ],
    "title": "Supply Chain Financing: An Early Empirical Examination",
-   "journal": "CAR"
+   "journal": "CAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -153,7 +173,9 @@
     }
    ],
    "title": "The Acquisition of Customers’ Accounting Reports and Pricing Outcomes: Evidence from the Airline Industry",
-   "journal": "CAR"
+   "journal": "CAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -166,7 +188,9 @@
     }
    ],
    "title": "The Effects of Asymmetric Cost Behavior on Corporate Environmental Commitments and Actions",
-   "journal": "CAR"
+   "journal": "CAR",
+   "paper_url": "https://doi.org/10.2139/ssrn.5051865",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -179,7 +203,9 @@
     }
    ],
    "title": "Turning on A Virtuous Cycle across Corporations: The Diversity Spillover Effect through Female Leadership Exposure",
-   "journal": "CAR"
+   "journal": "CAR",
+   "paper_url": "https://ssrn.com/abstract=5162069",
+   "paper_url_source": "author page: https://sites.google.com/site/ldaiprofile/"
   },
   {
    "authors": [
@@ -192,7 +218,9 @@
     }
    ],
    "title": "When are expected credit losses relevant and new to investors? Evidence from CECL adoption",
-   "journal": "CAR"
+   "journal": "CAR",
+   "paper_url": "https://doi.org/10.2139/ssrn.4038479",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -205,7 +233,9 @@
     }
    ],
    "title": "When Policymakers Step In, Do Lenders Step Back? Evidence from State Greenhouse Gas Emission Reduction Adoptions",
-   "journal": "CAR"
+   "journal": "CAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -218,7 +248,9 @@
     }
    ],
    "title": "An Algorithmic Approach to Understanding Firms’ Use of Relative Performance Evaluation",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -231,7 +263,9 @@
     }
    ],
    "title": "Biodiversity Risk Disclosure",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -244,7 +278,9 @@
     }
    ],
    "title": "Debt by Democracy: Bond Referendum Requirements and Municipal Borrowing",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "https://doi.org/10.2139/ssrn.6538318",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -257,7 +293,9 @@
     }
    ],
    "title": "Disclosure Control as a Real Option: Contractual Governance in Clinical Trials",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "https://doi.org/10.2139/ssrn.6485602",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -270,7 +308,9 @@
     }
    ],
    "title": "Do Machine-readable Disclosures Facilitate Regulatory Scrutiny? Evidence from SEC Comment Letters",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4989482",
+   "paper_url_source": "author page: https://sites.google.com/view/qiangwu/working-papers"
   },
   {
    "authors": [
@@ -283,7 +323,9 @@
     }
    ],
    "title": "Does Regulatory Scrutiny Affect Performance Metrics in Debt Contracts? Evidence from SEC Non-GAAP Comment Letters",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -296,7 +338,9 @@
     }
    ],
    "title": "Electoral Pressure and Strategic Disclosure of Congressional Trades",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -309,7 +353,9 @@
     }
    ],
    "title": "Generative AI and regulatory oversight: Evidence from SEC comment letters",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -322,7 +368,9 @@
     }
    ],
    "title": "Imitation or Information? Strategic Mimicry in Earnings Conference Calls",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "https://johnmbarrios.com/research.html#imitation-innovation",
+   "paper_url_source": "author page: https://johnmbarrios.com/research.html"
   },
   {
    "authors": [
@@ -335,7 +383,9 @@
     }
    ],
    "title": "Institutional Cross-industry Holdings and Credit Ratings",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -348,7 +398,9 @@
     }
    ],
    "title": "Newspaper Notice as a Government Transparency Mechanism: Evidence from Florida",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "https://doi.org/10.2139/ssrn.6168629",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -368,7 +420,9 @@
     }
    ],
    "title": "On the Usefulness of 10-K and 10-Q Amendments",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -381,7 +435,9 @@
     }
    ],
    "title": "Public sentiment, political risk, and stock repurchases",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -394,7 +450,9 @@
     }
    ],
    "title": "Racial Disparities in the Processing of Whistleblower Complaints",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5383732",
+   "paper_url_source": "author page: https://www.aneeshraghunandan.com/"
   },
   {
    "authors": [
@@ -407,7 +465,9 @@
     }
    ],
    "title": "Racial Segregation and Audit Outcomes",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "https://doi.org/10.2139/ssrn.4407376",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -420,7 +480,9 @@
     }
    ],
    "title": "Social Movements and Access to Credit",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "https://doi.org/10.2139/ssrn.4612160",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -433,7 +495,9 @@
     }
    ],
    "title": "Watchdogs and Walkouts: Talent Departures During SEC Investigations",
-   "journal": "JAE"
+   "journal": "JAE",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -446,7 +510,9 @@
     }
    ],
    "title": "Accounting Under Pressure: Recognition Rules, Insurer Bond Sales, and Real Investment",
-   "journal": "JAR"
+   "journal": "JAR",
+   "paper_url": "https://johnmbarrios.com/research.html#accounting-pressure",
+   "paper_url_source": "author page: https://johnmbarrios.com/research.html"
   },
   {
    "authors": [
@@ -459,7 +525,9 @@
     }
    ],
    "title": "Audit Mandates, Audit Firms, and Auditors",
-   "journal": "JAR"
+   "journal": "JAR",
+   "paper_url": "https://doi.org/10.2139/ssrn.4569877",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -472,7 +540,9 @@
     }
    ],
    "title": "Earnings News and Local Household Spending",
-   "journal": "JAR"
+   "journal": "JAR",
+   "paper_url": "https://doi.org/10.2139/ssrn.4727285",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -485,7 +555,9 @@
     }
    ],
    "title": "Everlasting Fraud",
-   "journal": "JAR"
+   "journal": "JAR",
+   "paper_url": "https://doi.org/10.67929/ecgi-law-617-2021",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -498,7 +570,9 @@
     }
    ],
    "title": "Front-Loaded Equity Awards: An Efficient Contracting or Rent Extraction Tool?",
-   "journal": "JAR"
+   "journal": "JAR",
+   "paper_url": "https://drive.google.com/file/d/1vWMSQuHm3MaR3G1Nxgs2GqoDLDXbx_ar/view?usp=sharing",
+   "paper_url_source": "author page: https://sites.google.com/view/sunilparupati/research"
   },
   {
    "authors": [
@@ -511,7 +585,24 @@
     }
    ],
    "title": "How Do Multiple Regulators Regulate? Evidence from Fairness Opinion Providers’ Conflict of Interest Disclosures",
-   "journal": "JAR"
+   "journal": "JAR",
+   "paper_url": "https://doi.org/10.2139/ssrn.4899679",
+   "paper_url_source": "crossref posted-content"
+  },
+  {
+   "authors": [
+    {
+     "name": "Iván Marinovic",
+     "openalex_id": "A5040639325",
+     "source_url": "https://www.gsb.stanford.edu/sites/default/files/faculty/cv/cv-marinovic-ivan-2025-jan.pdf",
+     "snippet": "Jeremy Bertomeu, Kyle Jung, and Ivan Marinovic, “Moral Hazard and the Value of Information: A Structural Approach” Second round JAR. Jeremy Bertomeu, and Ivan Marinovic. ‘’Persuasion, Science and Miracles.’’ Second round",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Moral Hazard and the Value of Information: A Structural Approach",
+   "journal": "JAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -524,7 +615,9 @@
     }
    ],
    "title": "Odd Lots & Optics: Manipulation in Response to Scrutiny",
-   "journal": "JAR"
+   "journal": "JAR",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4883535",
+   "paper_url_source": "author page: https://www.mattphillipsphd.me/home/research"
   },
   {
    "authors": [
@@ -537,7 +630,9 @@
     }
    ],
    "title": "Quantifying the Ecological Costs of Corporate Toxic Emissions: Evidence from Meeting Earnings Benchmarks",
-   "journal": "JAR"
+   "journal": "JAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -550,7 +645,9 @@
     }
    ],
    "title": "Response Latency as a Cue to Management Deception",
-   "journal": "JAR"
+   "journal": "JAR",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4937651",
+   "paper_url_source": "author page: https://www.johnheater.com/?page_id=33"
   },
   {
    "authors": [
@@ -563,7 +660,24 @@
     }
    ],
    "title": "Revenue-Sharing Real Estate Leases and the Contracting Role of Accounting Information",
-   "journal": "JAR"
+   "journal": "JAR",
+   "paper_url": "",
+   "paper_url_source": ""
+  },
+  {
+   "authors": [
+    {
+     "name": "Riddha Basu",
+     "openalex_id": "A5035007684",
+     "source_url": "https://business.gwu.edu/sites/g/files/zaxdzs5326/files/2025-07/1.BasuR_CV.pdf",
+     "snippet": "[1] Basu, R., Kim, D., and Singh, M., 2024. Spillover effects of accelerated-depreciationbased tax incentives on non-targeted assets. Revise and Resubmit at the Journal of Accounting Research (UTD-24/FT-50.)",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Spillover effects of accelerated-depreciation-based tax incentives on non-targeted assets",
+   "journal": "JAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -576,7 +690,9 @@
     }
    ],
    "title": "Strategic Disclosure in R&D Races: Theory and Evidence",
-   "journal": "JAR"
+   "journal": "JAR",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5895603",
+   "paper_url_source": "author page: https://sites.google.com/view/yuezhang/research"
   },
   {
    "authors": [
@@ -589,7 +705,9 @@
     }
    ],
    "title": "The Effects of Human Capital Disclosures on Professional Investors’ Assessments of Firm Risk",
-   "journal": "JAR"
+   "journal": "JAR",
+   "paper_url": "https://doi.org/10.2139/ssrn.5065997",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -602,7 +720,9 @@
     }
    ],
    "title": "Unintended Consequences of Disclosure Mandates: Evidence from the Sunshine Act and Pharmaceutical Marketing",
-   "journal": "JAR"
+   "journal": "JAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -615,7 +735,9 @@
     }
    ],
    "title": "Unveiling Government Disclosures: Evidence from Government Transparency on Terrorist Attacks",
-   "journal": "JAR"
+   "journal": "JAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -628,7 +750,9 @@
     }
    ],
    "title": "When Charts Clarify and Mislead: Visual Disclosure in Earnings Call Presentations",
-   "journal": "JAR"
+   "journal": "JAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -641,7 +765,9 @@
     }
    ],
    "title": "Accounting Service Offshoring and Reporting Quality",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -654,7 +780,9 @@
     }
    ],
    "title": "Beyond Representation: Workforce Gender Diversity, Firm Outcomes, and the Cultural Imperative",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4841977",
+   "paper_url_source": "author page: https://sites.google.com/view/sunilparupati/research (expired download link replaced by abstract page)"
   },
   {
    "authors": [
@@ -667,7 +795,9 @@
     }
    ],
    "title": "Companies' Strategic Reviews: Determinants and Outcomes",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5100005",
+   "paper_url_source": "author page: http://www.jennyzha.com/"
   },
   {
    "authors": [
@@ -680,7 +810,9 @@
     }
    ],
    "title": "Data innovation complementarity and firm growth",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4559921",
+   "paper_url_source": "author page: https://sites.google.com/berkeley.edu/fedyk/research"
   },
   {
    "authors": [
@@ -693,7 +825,9 @@
     }
    ],
    "title": "Do Fintech Shadow Banks Compete with Technological Advantages? Evidence from Mortgage Lending",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4222543",
+   "paper_url_source": "author page: https://www.business.uconn.edu/person/xiang-zheng/"
   },
   {
    "authors": [
@@ -706,7 +840,9 @@
     }
    ],
    "title": "Engagement Quality Review Partner Assignment and Effectiveness in U.S. Audits",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -719,7 +855,9 @@
     }
    ],
    "title": "Executive Compensation Contracts in the Presence of Adverse Selection",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "https://doi.org/10.2139/ssrn.3805082",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -732,7 +870,9 @@
     }
    ],
    "title": "Executives vs. Chatbots: Unmasking Insights through Human-AI Differences in Earnings Conference Q&A",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "https://doi.org/10.2139/ssrn.4480056",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -745,7 +885,9 @@
     }
    ],
    "title": "Female board reforms and earnings management",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -758,7 +900,9 @@
     }
    ],
    "title": "GSE Restrictions, Credit Supply, and Rental Market Spillovers",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -771,7 +915,9 @@
     }
    ],
    "title": "Human capital disclosure and workforce turnover",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "https://ssrn.com/abstract=3991257",
+   "paper_url_source": "author page: https://joshua-t-white.com/research/"
   },
   {
    "authors": [
@@ -784,7 +930,9 @@
     }
    ],
    "title": "Managerial Risk Assessment and Fund Performance: Evidence from Textual Disclosure",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4060307",
+   "paper_url_source": "author page: https://www.alanlzhang.com/"
   },
   {
    "authors": [
@@ -797,7 +945,9 @@
     }
    ],
    "title": "Mandatory Energy Assessments and Corporate Climate Behavior",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6632821",
+   "paper_url_source": "author page: https://jody-grewal.weebly.com/research.html"
   },
   {
    "authors": [
@@ -817,7 +967,9 @@
     }
    ],
    "title": "Mandatory vs. voluntary ESG disclosure, efficiency, and real effects",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "https://papers.ssrn.com/abstract=3975948",
+   "paper_url_source": "author page: https://sites.google.com/view/byeongje-an/research"
   },
   {
    "authors": [
@@ -830,7 +982,24 @@
     }
    ],
    "title": "Market-based incentives for audit quality",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "https://ssrn.com/abstract=4997362",
+   "paper_url_source": "author page: https://joshua-t-white.com/research/"
+  },
+  {
+   "authors": [
+    {
+     "name": "Charles Martineau",
+     "openalex_id": "A5034910542",
+     "source_url": "https://www.charlesmartineau.com/",
+     "snippet": "Vincent Gregoire [SSRN] News Selection and Asset Pricing R&R at MS. With Jordi Mondria [SSRN]",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "News Selection and Asset Pricing",
+   "journal": "MS",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -843,7 +1012,9 @@
     }
    ],
    "title": "Operating Lease Recognition and Credit Assessment by Banks",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "https://doi.org/10.2139/ssrn.4346220",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -856,7 +1027,9 @@
     }
    ],
    "title": "Personal Taxes and Unrelated Mergers and Acquisitions",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4760434",
+   "paper_url_source": "author page: https://jasonsandvik.com/"
   },
   {
    "authors": [
@@ -869,7 +1042,24 @@
     }
    ],
    "title": "Reputation-Building Actions After Corporate Social Irresponsibility",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4305248",
+   "paper_url_source": "author page: https://www.aneeshraghunandan.com/research/"
+  },
+  {
+   "authors": [
+    {
+     "name": "Charles Martineau",
+     "openalex_id": "A5034910542",
+     "source_url": "https://www.charlesmartineau.com/",
+     "snippet": "With Jordi Mondria [SSRN] Social Media and the Distortion of Price Revelation R&R at MS. With Jordi Mondria and Edna Lopez Avila [SSRN]",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Social Media and the Distortion of Price Revelation",
+   "journal": "MS",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -882,7 +1072,9 @@
     }
    ],
    "title": "Tenure Contracts and Human Capital Allocation",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -902,7 +1094,9 @@
     }
    ],
    "title": "The Effect of AI on Retail Investor Behavior: Evidence from Account-Level Trading Data",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "https://doi.org/10.2139/ssrn.5778246",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -915,7 +1109,9 @@
     }
    ],
    "title": "What Determines the Composition of Crowdsourced Investment Articles?",
-   "journal": "MS"
+   "journal": "MS",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -928,7 +1124,9 @@
     }
    ],
    "title": "CECL and Peer Effects in Bank Loan Loss Provisioning",
-   "journal": "RAST"
+   "journal": "RAST",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -941,7 +1139,9 @@
     }
    ],
    "title": "Do Firms Walk the Talk in Adopting Greenpay?",
-   "journal": "RAST"
+   "journal": "RAST",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -954,7 +1154,9 @@
     }
    ],
    "title": "ESG Assurance and the Comparability of Greenhouse Gas Emission Disclosures",
-   "journal": "RAST"
+   "journal": "RAST",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -967,7 +1169,9 @@
     }
    ],
    "title": "Hiding in Plain Sight: Online Complaints as an Alternative to Whistleblowing",
-   "journal": "RAST"
+   "journal": "RAST",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -980,7 +1184,9 @@
     }
    ],
    "title": "Naïve Earnings Growth Extrapolation",
-   "journal": "RAST"
+   "journal": "RAST",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3897761",
+   "paper_url_source": "author page: https://sites.google.com/view/frankweikaili/research"
   },
   {
    "authors": [
@@ -993,7 +1199,9 @@
     }
    ],
    "title": "The Effects of Accounting Firm Investments in Learning and Development Centers",
-   "journal": "RAST"
+   "journal": "RAST",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -1006,7 +1214,9 @@
     }
    ],
    "title": "The Role of Financial Information in Supply Chains: Evidence from Electronic Business Registers in Europe",
-   "journal": "RAST"
+   "journal": "RAST",
+   "paper_url": "https://doi.org/10.2139/ssrn.4879490",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -1019,7 +1229,9 @@
     }
    ],
    "title": "Welfare Implications of CEO Overconfidence",
-   "journal": "RAST"
+   "journal": "RAST",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -1032,7 +1244,9 @@
     }
    ],
    "title": "Accounting for Uncertain Tax Benefits",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -1045,7 +1259,9 @@
     }
    ],
    "title": "AI-Powered Analysts",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "https://doi.org/10.2139/ssrn.7176461",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -1058,7 +1274,9 @@
     }
    ],
    "title": "Analyst Competition in the Presence of Differential Private Information",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -1071,7 +1289,9 @@
     }
    ],
    "title": "Banks’ commitment to social responsibility in lending amid reduction to the enforcement of Fair Lending Laws",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "https://doi.org/10.2139/ssrn.4617900",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -1084,7 +1304,9 @@
     }
    ],
    "title": "Director Turnover after Monitoring Failures: A Reexamination and New Evidence",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "https://doi.org/10.2139/ssrn.4259520",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -1097,7 +1319,9 @@
     }
    ],
    "title": "Exit through the Glassdoor: Employee-Generated Disclosures and Labor Markets",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -1110,7 +1334,9 @@
     }
    ],
    "title": "External Legal Counsels as Transaction Cost Engineers in Syndicated Loan Contracting",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -1123,7 +1349,9 @@
     }
    ],
    "title": "Fictional Experiments in Patent Disclosures",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "https://doi.org/10.2139/ssrn.5582110",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -1136,7 +1364,9 @@
     }
    ],
    "title": "Firms’ internal information systems and the wages of female and Black workers",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6777359",
+   "paper_url_source": "author page: https://sites.google.com/view/maryjane-rabier/"
   },
   {
    "authors": [
@@ -1149,7 +1379,9 @@
     }
    ],
    "title": "Human Readability of Disclosures in a Machine-Readable World",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4561569",
+   "paper_url_source": "author page: https://sites.google.com/view/qiangwu/working-papers"
   },
   {
    "authors": [
@@ -1162,7 +1394,9 @@
     }
    ],
    "title": "Innovation Spillover through Information Acquisition of SEC Filings",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5020404",
+   "paper_url_source": "author page: https://sites.google.com/site/ldaiprofile/"
   },
   {
    "authors": [
@@ -1175,7 +1409,9 @@
     }
    ],
    "title": "Media Coverage of Employment Discrimination",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4637209",
+   "paper_url_source": "author page: https://www.aneeshraghunandan.com/cv/"
   },
   {
    "authors": [
@@ -1188,7 +1424,9 @@
     }
    ],
    "title": "Polish or Purge?: The Effects of Critical Audit Matter Disclosure on Management’s Critical Accounting Estimates",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -1208,7 +1446,9 @@
     }
    ],
    "title": "Program Ratio Bias",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -1221,7 +1461,9 @@
     }
    ],
    "title": "Re-examining the Timing Role of Accrual Accounting",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "https://doi.org/10.2139/ssrn.4975933",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -1234,7 +1476,9 @@
     }
    ],
    "title": "Sell-Side Bus Tours",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -1247,7 +1491,9 @@
     }
    ],
    "title": "The Credibility of Non-Answers in Conference Calls: a Real-time Market Response Approach",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -1260,7 +1506,9 @@
     }
    ],
    "title": "The Deterrent Effect of SEC Regional Reorganization on Insider Trading Profits",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -1273,7 +1521,9 @@
     }
    ],
    "title": "The Impact of AI Evaluators and Incentive Schemes on Employee Idea Sharing",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6265758",
+   "paper_url_source": "author page: https://jasonsandvik.com/"
   },
   {
    "authors": [
@@ -1286,7 +1536,9 @@
     }
    ],
    "title": "The Impact of an AI Evaluator on Employee Idea Sharing: Evidence from an Experiment",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -1299,7 +1551,9 @@
     }
    ],
    "title": "The Importance of Financial Reporting to Supply Chain Contracting: Evidence from Private Firms",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -1312,7 +1566,9 @@
     }
    ],
    "title": "The SEC Reorganization and Financial Reporting",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "",
+   "paper_url_source": ""
   },
   {
    "authors": [
@@ -1325,7 +1581,9 @@
     }
    ],
    "title": "The Signaling Role of Seemingly Myopic Investment Behavior",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "https://doi.org/10.2139/ssrn.4294208",
+   "paper_url_source": "crossref posted-content"
   },
   {
    "authors": [
@@ -1338,7 +1596,9 @@
     }
    ],
    "title": "When the IRS Speaks: Investor Valuation of Private Letter Rulings and Tax Opinions in Corporate Spin-offs",
-   "journal": "TAR"
+   "journal": "TAR",
+   "paper_url": "",
+   "paper_url_source": ""
   }
  ]
 }

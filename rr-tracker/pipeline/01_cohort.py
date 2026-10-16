@@ -45,6 +45,8 @@ def get(path, params):
                 time.sleep(0.15)  # polite: < 10 req/s
                 return json.load(r)
         except urllib.error.HTTPError as e:
+            if e.code == 404:
+                raise RuntimeError("OpenAlex 404: " + url)
             if e.code in (401, 403):
                 raise RuntimeError("OpenAlex refused (%s): %s" % (e.code, e.read()[:300]))
             print("  retry", attempt, e, file=sys.stderr)

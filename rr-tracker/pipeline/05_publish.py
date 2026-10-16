@@ -58,8 +58,8 @@ def main():
         generated=st["run_date"],
         coverage=dict(authors_total=len(people_total), authors_reached=len(reached)),
         method=[
-            "Authors: everyone with at least one article in JAE, JAR, TAR, CAR or RAST published %s (OpenAlex), "
-            "%s people." % (st["window"], format(len(people_total), ",")),
+            "Authors: everyone with at least one article in JAE, JAR, TAR, CAR or RAST published %s, from OpenAlex "
+            "and the journals' own issue lists, %s people." % (st["window"], format(len(people_total), ",")),
             "Pages: the personal website listed on the author's ORCID record, and the faculty profile (plus any personal "
             "site or CV it links to) found through a curated list of %d accounting faculty directories. "
             "%s of %s authors had at least one page that could be read (%.1f%%); the rest list no site we could find, "
@@ -73,6 +73,11 @@ def main():
         ],
         entries=sorted(rows.values(), key=lambda x: (x["journal"], nz(x["title"]))),
     )
+    # keep paper links that passed the independent link check (written by 06_links + review)
+    vp = os.path.join(DATA, "verified_links.json")
+    links = json.load(open(vp)) if os.path.exists(vp) else {}
+    for x in out["entries"]:
+        x["paper_url"], x["paper_url_source"] = links.get(x["title"], ["", ""])
     json.dump(out, open(os.path.join(DATA, "rr_public.json"), "w"), indent=1, ensure_ascii=False)
     print("public entries %d; people reached %d of %d" % (len(out["entries"]), len(reached), len(people_total)))
 

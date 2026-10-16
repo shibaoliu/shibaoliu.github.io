@@ -18,6 +18,7 @@ PAPERS_DATA = json.loads((ROOT / "data/papers.json").read_text())
 PAPERS = PAPERS_DATA["papers"]
 THEMES = PAPERS_DATA["themes"]
 # The AcctRes tab is built only from reviewed tracker entries (rr-tracker/data/rr_public.json).
+HIDDEN = set(SITE.get("hidden_pages", []))
 TRACKER_FILE = ROOT / "rr-tracker/data/rr_public.json"
 TRACKER = json.loads(TRACKER_FILE.read_text()) if TRACKER_FILE.exists() else None
 BY_SLUG = {p["slug"]: p for p in PAPERS}
@@ -34,6 +35,8 @@ STATUS_LABEL = {
 def nav_items():
     items = [("index.html", "Home"), ("cv.html", "CV"), ("research.html", "Research"),
              ("teaching.html", "Teaching"), ("presentations.html", "Presentations")]
+    # Pages listed in site.json "hidden_pages" are neither built nor linked.
+    items = [x for x in items if x[0] not in HIDDEN]
     # The AcctRes (R&R tracker) tab appears only once reviewed tracker data exist.
     if TRACKER:
         items.append(("rr-tracker/index.html", "AcctRes"))
@@ -213,7 +216,7 @@ def build_tracker():
   data-title="{e(x['title'].lower())}" data-author="{e(x['authors'][0]['name'].split()[-1].lower())}"
   data-checked="{e(max(au['checked_date'] for au in x['authors']))}" data-search="{e(search)}">
   <div class="paper-head"><span class="paper-kicker">{e(JOURNAL_NAME[x['journal']])}</span><span class="status-pill status-review">R&amp;R &middot; {x['journal']}</span></div>
-  <h3>{e(x['title'])}</h3>
+  <h3>{a(e(x['title']), x['paper_url'], True) if x.get('paper_url') else e(x['title'])}</h3>
   <p class="paper-authors">Listed by {who}</p>
   <details class="paper-abstract"><summary>Wording on the author's page</summary>{quote}</details>
 </article>""")
@@ -301,11 +304,25 @@ def build_home():
     edu = "\n".join(f'          <li><div class="primary">{e(x["degree"])}</div><div class="secondary">{e(x["school"])}</div></li>'
                     for x in SITE["education"])
 
+    edu_block = ""
+    if SITE.get("show_education", True):
+        edu_block = f"""      <div class="block">
+        <h2 class="section-label">Education</h2>
+        <ul class="row-list">
+{edu}
+        </ul>
+      </div>"""
+
     def rail(items):
         return "".join(f"<li>{x}</li>" for x in items)
 
     n_current = sum(p["status"] != "published" for p in PAPERS)
     n_talks = len(SITE.get("presentations", []))
+    talks = ""
+    if "presentations.html" not in HIDDEN:
+        talks = ('<div class="rail-block"><div class="rail-heading">Presentations</div><div class="rail-note">'
+                 f'{n_talks} conference presentations, consortia, and workshops since 2013, including AAA, FARS, CAR, '
+                 'Kellogg, and Wharton.<br><a href="presentations.html">See the list &rarr;</a></div></div>')
     tracker = ""
     if TRACKER:
         tracker = ('<div class="rail-block"><div class="rail-heading">AcctRes: R&amp;R Tracker</div>'
@@ -357,12 +374,7 @@ def build_home():
         <h2 class="section-label">About</h2>
         {about}
       </div>
-      <div class="block">
-        <h2 class="section-label">Education</h2>
-        <ul class="row-list">
-{edu}
-        </ul>
-      </div>
+{edu_block}
     </div>
     <aside>
       <div class="rail-block"><div class="rail-heading">Research Interests</div><ul class="rail-list">{rail(e(x) for x in SITE['interests'])}</ul></div>
@@ -370,7 +382,7 @@ def build_home():
       <div class="rail-block"><div class="rail-heading">Affiliations</div><ul class="rail-list">{rail(e(x) for x in SITE.get('affiliations', []))}</ul></div>
       <div class="rail-block"><div class="rail-heading">Research</div><div class="rail-note">{n_current} current papers on voluntary and mandatory disclosure, financial analysts, and research methods.<br><a href="research.html">See all papers &rarr;</a></div></div>
       {tracker}
-      <div class="rail-block"><div class="rail-heading">Presentations</div><div class="rail-note">{n_talks} conference presentations, consortia, and workshops since 2013, including AAA, FARS, CAR, Kellogg, and Wharton.<br><a href="presentations.html">See the list &rarr;</a></div></div>
+      {talks}
       <div class="rail-block"><div class="rail-heading">Selected Honors</div><ul class="rail-list">{rail(e(x) for x in SITE['awards'])}</ul></div>
       <div class="rail-block"><div class="rail-heading">Service</div><ul class="rail-list">{rail(SITE['service'])}</ul></div>
       <div class="rail-block"><div class="rail-heading">Contact</div><div class="rail-note"><a href="mailto:{e(SITE['email'])}">{e(SITE['email'])}</a><br>{'<br>'.join(e(x) for x in SITE['address'])}</div></div>
@@ -592,6 +604,9 @@ def main():
     out = {"index.html": build_home(), "research.html": build_research(),
            "teaching.html": build_teaching(), "presentations.html": build_presentations(),
            "cv.html": build_cv()}
+    for h in HIDDEN:
+        out.pop(h, None)
+        (ROOT / h).unlink(missing_ok=True)
     papers_dir = ROOT / "papers"
     papers_dir.mkdir(exist_ok=True)
     for old in papers_dir.glob("*.html"):

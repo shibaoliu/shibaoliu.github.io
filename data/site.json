@@ -27,10 +27,6 @@
     {
       "label": "LinkedIn",
       "url": ""
-    },
-    {
-      "label": "Curriculum Vitae",
-      "url": "cv/CV_Shibao_Liu.pdf"
     }
   ],
   "news": [
@@ -53,10 +49,8 @@
     }
   ],
   "about": [
-    "I am an Assistant Professor of Accounting at the <a href=\"https://www.fit.edu/\" target=\"_blank\" rel=\"noopener\">Florida Institute of Technology</a>. I received my Ph.D. in Accounting from the University of Illinois Chicago in 2025.",
-    "My research examines corporate voluntary and mandatory disclosures, financial analysts, disclosure regulation, and their implications for capital markets. Current projects study how analysts' information shapes managers' disclosure choices, how disclosure relates to investment efficiency, risk factor disclosure, the SEC's cybersecurity disclosure rule, and research-methods questions in accounting.",
-    "Before my doctoral work in accounting, I earned a Ph.D. in Economics and a B.A. in Finance from Xiamen University, was a visiting scholar at the University of Michigan, and worked as an accounting and financial analyst at Freddie Mac.",
-    "At Florida Tech, I teach Introduction to Financial Accounting and Introduction to Managerial Accounting."
+    "Welcome to my page!",
+    "I am an Assistant Professor of Accounting at the Nathan M. Bisk College of Business at <a href=\"https://www.fit.edu/\" target=\"_blank\" rel=\"noopener\">Florida Institute of Technology</a>. I earned my Ph.D. in Accounting from the University of Illinois Chicago. My research focuses on corporate disclosures, financial analysts, regulatory policy, and their implications for the capital market."
   ],
   "education": [
     {
@@ -342,5 +336,10 @@
       "Jun 2013",
       "Presenter"
     ]
-  ]
+  ],
+  "hidden_pages": [
+    "cv.html",
+    "presentations.html"
+  ],
+  "show_education": false
 }
