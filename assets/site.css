@@ -246,3 +246,8 @@ pre.bib { font-family: var(--mono); font-size: .78rem; background: var(--paper-d
 @media print {
   .site-header, .toolbar, .site-footer, .entry-links { display: none; }
 }
+
+/* AcctRes tracker */
+.rr blockquote { margin: .5rem 0 0; padding: .45rem .8rem; border-left: 3px solid var(--accent); background: var(--accent-soft); font-size: .86rem; color: var(--ink-soft); overflow-wrap: anywhere; }
+.rr-method { margin-top: 2.5rem; }
+.rr-method li { font-size: .9rem; }

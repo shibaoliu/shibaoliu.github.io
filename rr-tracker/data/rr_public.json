@@ -1,0 +1,1344 @@
+{
+ "generated": "2026-10-16",
+ "coverage": {
+  "authors_total": 2788,
+  "authors_reached": 1074
+ },
+ "method": [
+  "Authors: everyone with at least one article in JAE, JAR, TAR, CAR or RAST published 2021–2026 (OpenAlex), 2,788 people.",
+  "Pages: the personal website listed on the author's ORCID record, and the faculty profile (plus any personal site or CV it links to) found through a curated list of 148 accounting faculty directories. 1,074 of 2,788 authors had at least one page that could be read (38.5%); the rest list no site we could find, or their pages block automated reading.",
+  "A paper is listed only when the page itself attaches a revise-and-resubmit phrase to one of the six journals (for example, “R&amp;R at The Accounting Review”). The exact wording is shown under each entry.",
+  "Papers that Crossref or OpenAlex show as already published are removed, and every entry was checked against the live page before it was listed.",
+  "Missing or out-of-date entry? Email <a href=\"mailto:lius@fit.edu\">lius@fit.edu</a> with the page that lists it."
+ ],
+ "entries": [
+  {
+   "authors": [
+    {
+     "name": "George Drymiotes",
+     "openalex_id": "A5069077923",
+     "source_url": "https://www.tcu.edu/directory/files/Drymiotes-George-CV-Jan2026.pdf",
+     "snippet": "Working Papers Disclosure Policy and Enforcement: The Role of Corporate Boards (with Z. Liu and K. Sivaramakrishnan), R&R at CAR. Welfare Implications of CEO Overconfidence (with R. Balakrishnan, J. Tian, and K. Sivaramakrishnan), R&R at RAST.",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Disclosure Policy and Enforcement: The Role of Corporate Boards",
+   "journal": "CAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Qiang Wu",
+     "openalex_id": "A5061498333",
+     "source_url": "https://sites.google.com/view/qiangwu/working-papers",
+     "snippet": "ge Government Subsidy Applications? Evidence from the Paycheck Protection Program”, with Ben Wang and Colin Zeng, under R&R at Contemporary Accounting Research, SSRN “Do Less, Talk More: The Impact of CEO Individualism on Innovation Disclosure”, with Charles ADUBOFOUR and Colin Zeng, under R&R at Re",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Does Aggressive Tax Planning Discourage Government Subsidy Applications? Evidence from the Paycheck Protection Program",
+   "journal": "CAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Hengda Jin",
+     "openalex_id": "A5014939214",
+     "source_url": "https://mays.tamu.edu/wp-content/uploads/2026/05/CV_Hengda_Jin_05282026.pdf",
+     "snippet": "(with Simon Cui, Sabrina Chi, Edward Owens, and Karen Ton) - Revise and Resubmit at Contemporary Accounting Research “Customers as Information Intermediaries: Personal Experience and Online Equity Research”",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Information Dissemination Technologies and Syndicated Loan Structure: Evidence from EDGAR",
+   "journal": "CAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "You‐il Park",
+     "openalex_id": "A5026978309",
+     "source_url": "https://shidler.hawaii.edu/soa/directory/chris-park",
+     "snippet": "eduction Adoptions,\" with Peter Demerjian and Bohyun Yang. Revise and resubmit at Contemporary Accounting Research. \"Long-Term Earnings Growth Forecast Initiations for Loss Firms,\" with Songyi Han, Boochun Jung, and Huihao Yan. Revise and resubmit at Contemporary Accounting Research. Awards & Honors",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Long-Term Earnings Growth Forecast Initiations for Loss Firms",
+   "journal": "CAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Yue Zhang",
+     "openalex_id": "A5081644056",
+     "source_url": "https://sites.google.com/view/yuezhang/research",
+     "snippet": "“Management Forecast Policy and Liquidity Provision by Individual Investors”, with Mei Feng, Guojin Gong, and Yuan Xie. R&R, Contemporary Accounting Research We examine whether firms' disclosure policy facilitates individual investors' liquidity provision.",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Management Forecast Policy and Liquidity Provision by Individual Investors",
+   "journal": "CAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "John Manuel Barrios",
+     "openalex_id": "A5054886175",
+     "source_url": "https://johnmbarrios.com/research.html",
+     "snippet": "with Zachary Kaplan and Yongzhou Lin Revision Requested: Contemporary Accounting Research Abstract",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "More Constraints, More Consensus? How Regulation Shapes Investor Information Asymmetry",
+   "journal": "CAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Jeremiah Green",
+     "openalex_id": "A5062950490",
+     "source_url": "https://mays.tamu.edu/wp-content/uploads/2026/10/CV-Jeremiah-Green-09-2026.pdf",
+     "snippet": "“Prompting Information Acquisition as a Newswire Journalist” with Pengkai Lin and Nina Xu, 2nd round R&R at Contemporary Accounting Research. “The Growth of Data Technology and the Production of Financial News: Implications for",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Prompting Information Acquisition as a Newswire Journalist",
+   "journal": "CAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Richard Dean Mergenthaler",
+     "openalex_id": "A5013163842",
+     "source_url": "https://directory.smeal.psu.edu/download/rjm6979-vita.pdf",
+     "snippet": "Ciao-Wei Chen, Daniel W. Collins, David S. Koo, and Richard D. Mergenthaler. “Public Peer Firm Information in Mergers and Acquisitions of Privately Held Targets.” Revise and resubmit, Contemporary Accounting Research (fourth round).",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Public Peer Firm Information in Mergers and Acquisitions of Privately Held Targets",
+   "journal": "CAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Oscar Timmermans",
+     "openalex_id": "A5059696202",
+     "source_url": "https://oscar-timmermans.github.io/cv/cv.pdf",
+     "snippet": "(with Mary Ellen Carter, Melissa Martin, and Jon Underwood) Revise and resubmit at Contemporary Accounting Research “ Transparency on the Wrong Margin: Evidence from the Physician Payments Sunshine Act”",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Shareholder Priming: Evidence from Say on Pay",
+   "journal": "CAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Ben Lourie",
+     "openalex_id": "A5040540091",
+     "source_url": "https://merage.uci.edu/_files/documents/faculty-profiles/Ben-Lourie-CV-Oct2026.pdf",
+     "snippet": "(with Elizabeth Chuk and Il Sun Yoo) *2nd R&R – Contemporary Accounting Research 25) “Pay Ratio Disclosure and Employee Turnover ”",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Supply Chain Financing: An Early Empirical Examination",
+   "journal": "CAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Hengda Jin",
+     "openalex_id": "A5014939214",
+     "source_url": "https://mays.tamu.edu/wp-content/uploads/2026/05/CV_Hengda_Jin_05282026.pdf",
+     "snippet": "Airline Industry” (Dissertation) - Revise and Resubmit at Contemporary Accounting Research “Information Dissemination Technologies and Syndicated Loan Structure: Evidence from EDGAR”",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "The Acquisition of Customers’ Accounting Reports and Pricing Outcomes: Evidence from the Airline Industry",
+   "journal": "CAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Hong Xie",
+     "openalex_id": "A5103120208",
+     "source_url": "https://gattonweb.uky.edu/Vitas/hnxi222_Vita.pdf",
+     "snippet": "(with C. Chen, J. Ju and D. Yang) - Revise and resubmit at Contemporary Accounting Research. “Constituency statutes and voluntary disclosure: Evidence from major customer identities” (J. Ju and J.",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "The Effects of Asymmetric Cost Behavior on Corporate Environmental Commitments and Actions",
+   "journal": "CAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Lili Dai",
+     "openalex_id": "A5038905034",
+     "source_url": "https://sites.google.com/site/ldaiprofile/",
+     "snippet": "e Diversity Spillover Effect through Female Leadership Exposure,\" with Rui Dai, Ling Lei Lisic, and Zihang Peng (SSRN). Revise & Resubmit at Contemporary Accounting Research. \"What Determines the Composition of Crowdsourced Investment Articles?,\" with Wei Chen, and Hun-Tong Tan (SSRN). Revise & Resu",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Turning on A Virtuous Cycle across Corporations: The Diversity Spillover Effect through Female Leadership Exposure",
+   "journal": "CAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Jed J. Neilson",
+     "openalex_id": "A5052812573",
+     "source_url": "https://directory.smeal.psu.edu/download/jjn12-vita.pdf",
+     "snippet": "“When are expected credit losses relevant and new to investors? Evidence from CECL adoption” (with Kurt Gee, Brent Schmidt, and Biqin Xie), Revise and resubmit, Contemporary Accounting Research “When Aggregation Obscures: Evidence from SG&A Disaggregation” (with Bradley E. Hendricks",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "When are expected credit losses relevant and new to investors? Evidence from CECL adoption",
+   "journal": "CAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "You‐il Park",
+     "openalex_id": "A5026978309",
+     "source_url": "https://shidler.hawaii.edu/soa/directory/chris-park",
+     "snippet": "ders Step Back? Evidence from State Greenhouse Gas Emission Reduction Adoptions,\" with Peter Demerjian and Bohyun Yang. Revise and resubmit at Contemporary Accounting Research. \"Long-Term Earnings Growth Forecast Initiations for Loss Firms,\" with Songyi Han, Boochun Jung, and Huihao Yan. Revise and ",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "When Policymakers Step In, Do Lenders Step Back? Evidence from State Greenhouse Gas Emission Reduction Adoptions",
+   "journal": "CAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Oscar Timmermans",
+     "openalex_id": "A5059696202",
+     "source_url": "https://oscar-timmermans.github.io/cv/cv.pdf",
+     "snippet": "(with Matt Bloomfield and Wayne Guay) Revise and resubmit at Journal of Accounting and Economics “ Exit through the Glassdoor: Employee-Generated Disclosures and Labor Markets”",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "An Algorithmic Approach to Understanding Firms’ Use of Relative Performance Evaluation",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "Miao Liu",
+     "openalex_id": "A5034866430",
+     "source_url": "https://miao-liu.com/index.html",
+     "snippet": "“Biodiversity Risk Disclosure” R&R Journal of Accounting and Economics",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Biodiversity Risk Disclosure",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "Kimberlyn Munevar",
+     "openalex_id": "A5093126771",
+     "source_url": "https://mays.tamu.edu/wp-content/uploads/2026/05/Kimberlyn-Munevar-CV-202605.pdf",
+     "snippet": "Huang and Delphine Samuels) (Link) - Revise and resubmit at Journal of Accounting and Economics 5. “Alternative Data and Disclosure Demand” (with Antonis Kartapanis and Eunjee Kim)",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Debt by Democracy: Bond Referendum Requirements and Municipal Borrowing",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "Yue Zhang",
+     "openalex_id": "A5081644056",
+     "source_url": "https://www.baruch.cuny.edu/profiles/faculty/Yue-Zhang",
+     "snippet": "O., & Wang, S.(n.d.). Disclosure Control as a Real Option: Contractual Governance in Clinical Trials. In Progress. 1st round R&R, Journal of Accounting and Economics. Co-authored with current doctoral student (Olivia Chen). TitleFunding Agency SponsorStart DateEnd DateAwarded DateTotal FundingStatus",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Disclosure Control as a Real Option: Contractual Governance in Clinical Trials",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "Qiang Wu",
+     "openalex_id": "A5061498333",
+     "source_url": "https://sites.google.com/view/qiangwu/working-papers",
+     "snippet": "eadable Disclosures Facilitate Regulatory Scrutiny? Evidence from SEC Comment Letters”, with Ben Wang, Liwei Weng, and Emma Xu, under R&R at Journal of Accounting and Economics, SSRN “The Listenability of Disclosures and Firms’ Information Environment”, with Andy Call, Ben Wang, and Liwei Weng, SSRN",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Do Machine-readable Disclosures Facilitate Regulatory Scrutiny? Evidence from SEC Comment Letters",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "Qiang Wu",
+     "openalex_id": "A5061498333",
+     "source_url": "https://sites.google.com/view/qiangwu/working-papers",
+     "snippet": "s in Debt Contracts? Evidence from SEC Non-GAAP Comment Letters”, with Hanzhong Shi, Liang Tan, and Jasmine Wang, under R&R at Journal of Accounting and Economics “Institutional Cross-industry Holdings and Credit Ratings”, with Shenglan Chen, Hui Ma, and Hao Zhang, under R&R at Journal of Accounting",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Does Regulatory Scrutiny Affect Performance Metrics in Debt Contracts? Evidence from SEC Non-GAAP Comment Letters",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "Susan Shu",
+     "openalex_id": "A5062630269",
+     "source_url": "https://sites.google.com/a/bc.edu/susan-shu/",
+     "snippet": "Electoral Pressure and Strategic Disclosure of Congressional Trades (with Danling Song and Amy Hutton). R&R Journal of Accounting and Economics Beyond disclosure: Signaling corporate ties on social media (with Sean Cao, Lijun Lei, and Enshuai Yu).",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Electoral Pressure and Strategic Disclosure of Congressional Trades",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "Susan Shu",
+     "openalex_id": "A5062630269",
+     "source_url": "https://sites.google.com/a/bc.edu/susan-shu/",
+     "snippet": "Generative AI and regulatory oversight: Evidence from SEC comment letters (with Minjae Koo, Kevin Yeung and Meiling Zhao). R&R Journal of Accounting and Economics Electoral Pressure and Strategic Disclosure of Congressional Trades (with Danling Song and Amy Hutton).",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Generative AI and regulatory oversight: Evidence from SEC comment letters",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "John Manuel Barrios",
+     "openalex_id": "A5054886175",
+     "source_url": "https://johnmbarrios.com/research.html",
+     "snippet": "with Khrystyna Bochkay, Roman Chychyla and Sundaresh Ramnath Revision Requested: Journal of Accounting and Economics Abstract",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Imitation or Information? Strategic Mimicry in Earnings Conference Calls",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "Qiang Wu",
+     "openalex_id": "A5061498333",
+     "source_url": "https://sites.google.com/view/qiangwu/working-papers",
+     "snippet": " Economics “Institutional Cross-industry Holdings and Credit Ratings”, with Shenglan Chen, Hui Ma, and Hao Zhang, under R&R at Journal of Accounting and Economics “Do Machine-readable Disclosures Facilitate Regulatory Scrutiny? Evidence from SEC Comment Letters”, with Ben Wang, Liwei Weng, and Emma ",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Institutional Cross-industry Holdings and Credit Ratings",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "Kimberlyn Munevar",
+     "openalex_id": "A5093126771",
+     "source_url": "https://mays.tamu.edu/wp-content/uploads/2026/05/Kimberlyn-Munevar-CV-202605.pdf",
+     "snippet": "Anya Nakhmurina and Delphine Samuels) (Link) - Revise and resubmit at Journal of Accounting and Economics 4. “Debt by Democracy: Bond Referendum Requirements and Municipal Borrowing” (with June",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Newspaper Notice as a Government Transparency Mechanism: Evidence from Florida",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "MaryJane Rabier",
+     "openalex_id": "A5027393813",
+     "source_url": "https://sites.google.com/view/maryjane-rabier/",
+     "snippet": "Working Papers On the usefulness of 10-K and 10-Q Amendments (with Sarah McVay and Simmi Mookerjee) Revise and resubmit at the Journal of Accounting and Economics. Selected for the 2026 JAE Conference. Amendments to Forms 10-K and 10-Q—filed as 10-K/As and 10-Q/As—are a routine but underexamined com",
+     "checked_date": "2026-10-16"
+    },
+    {
+     "name": "Sarah E. McVay",
+     "openalex_id": "A5013859987",
+     "source_url": "https://foster.uw.edu/wp-content/uploads/2026/06/vita_sarahmcvay_6.2026.pdf",
+     "snippet": "McVay, S., S. Mookerjee, M.J. Rabier. 2026. On the Usefulness of 10-K and 10-Q Amendments. R&R at Journal of Accounting and Economics Page 3",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "On the Usefulness of 10-K and 10-Q Amendments",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "Susan Shu",
+     "openalex_id": "A5062630269",
+     "source_url": "https://sites.google.com/a/bc.edu/susan-shu/",
+     "snippet": "Public sentiment, political risk, and stock repurchases (with Vishal Baloria, Alvis Lo, and Enshuai Yu). R&R Journal of Accounting and Economics Generative AI and regulatory oversight: Evidence from SEC comment letters (with Minjae Koo, Kevin Yeung and Meiling Zhao).",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Public sentiment, political risk, and stock repurchases",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "Aneesh Raghunandan",
+     "openalex_id": "A5073952785",
+     "source_url": "https://www.aneeshraghunandan.com/",
+     "snippet": "Racial Disparities in the Processing of Whistleblower Complaints (with Marco Errico and Sinja Leonelli) Revise and Resubmit, Journal of Accounting and Economics Media Coverage of Employment Discrimination (with Devin Shanthikumar and Elizabeth Tori)",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Racial Disparities in the Processing of Whistleblower Complaints",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "Felix W. Vetter",
+     "openalex_id": "A5005982263",
+     "source_url": "https://mitsloan.mit.edu/shared/ods/documents?PersonID=249508&DocID=14225",
+     "snippet": "“Racial Segregation and Audit Outcomes” - with Hans Christensen and Mark Maffett (R&R at Journal of Accounting & Economics) “Audit Mandates, Audit Firms, and Auditors”",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Racial Segregation and Audit Outcomes",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "Joon Sang Yoon",
+     "openalex_id": "A5086708359",
+     "source_url": "https://myweb.cuhk.edu.cn/yoonjoonsang/Home/Research",
+     "snippet": "Yoon, J. S., Huang, K., & Zhang, T. Green Nudges in Food Deliveries, work in progress. Yoon, J. S. Social Movements and Access to Credit (Dissertation), R&R, Journal of Accounting and Economics. Yoon, J. S., Fischer, P., Jennings, J., & Soliman, M. Streaks and Bubbles, completed.",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Social Movements and Access to Credit",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "Yanrong Jia",
+     "openalex_id": "A5071462568",
+     "source_url": "https://www.baruch.cuny.edu/profiles/faculty/Yanrong-Jia",
+     "snippet": "T., & Yang, Y. (2026). Watchdogs and Walkouts: Talent Departures During SEC Investigations. Journal of Accounting and Economics R&R, Frankel, R., Jia, Y., & Sun, Y. (2026). Explaining Accruals Using Working Capital Efficiency. Journal of Business Finance & Accounting , 53(4). 1481-1507. In Progress.",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Watchdogs and Walkouts: Talent Departures During SEC Investigations",
+   "journal": "JAE"
+  },
+  {
+   "authors": [
+    {
+     "name": "John Manuel Barrios",
+     "openalex_id": "A5054886175",
+     "source_url": "https://johnmbarrios.com/research.html",
+     "snippet": "with Andreas Neuhierl and Linda Schilling Revision Requested: Journal of Accounting Research Abstract",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Accounting Under Pressure: Recognition Rules, Insurer Bond Sales, and Real Investment",
+   "journal": "JAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Felix W. Vetter",
+     "openalex_id": "A5005982263",
+     "source_url": "https://mitsloan.mit.edu/shared/ods/documents?PersonID=249508&DocID=14225",
+     "snippet": "“Audit Mandates, Audit Firms, and Auditors” - with Matthias Breuer and Anthony Le (R&R at Journal of Accounting Research) “Technological Investment and Accounting: A Demand-Side Perspective on Accounting Enrollment",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Audit Mandates, Audit Firms, and Auditors",
+   "journal": "JAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Jinhwan Kim",
+     "openalex_id": "A5100671517",
+     "source_url": "https://www.gsb.stanford.edu/sites/default/files/faculty/cv/JinhwanKim_CV_August2026.pdf",
+     "snippet": "Spending. • Journal of Accounting Research (R&R). [11] Armstrong, C., Kim, J., Sani, J., and Shi, T (2026). Patent Disclosures, Examiners, and",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Earnings News and Local Household Spending",
+   "journal": "JAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Vivian W. Fang",
+     "openalex_id": "A5059132656",
+     "source_url": "https://fangvivian.weebly.com/uploads/2/3/2/7/23272078/vivianfang_cv_june_2026.pdf",
+     "snippet": "▪ “Everlasting Fraud” (with Nan Li, Wenyu Wang, and Gaoqing Zhang) JAR, R&R 3",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Everlasting Fraud",
+   "journal": "JAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Sunil Parupati",
+     "openalex_id": "A5071189550",
+     "source_url": "https://sites.google.com/view/sunilparupati/research",
+     "snippet": "[2]. Front-Loaded Equity Awards: An Efficient Contracting or Rent Extraction Tool? (with Rafael Copat) Revise and Resubmit at Journal of Accounting Research Conference presentations: AAA 2025; FARS 2025; Hawaii Accounting Research Conference 2025; Conference on Financial Economics and Accounting 202",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Front-Loaded Equity Awards: An Efficient Contracting or Rent Extraction Tool?",
+   "journal": "JAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Claudia Imperatore",
+     "openalex_id": "A5002260134",
+     "source_url": "https://accounting.unibocconi.eu/sites/default/files/media/cv/Final%20C%20Imperatore%20Updated%20CV.pdf",
+     "snippet": "Disclosures” (with Phil Berger – University of Chicago; Rachel Geoffroy – Ohio State University; and Lisa Liu – Columbia Business School) – revise and resubmit at Journal of Accounting Research (revising for 2nd round)",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "How Do Multiple Regulators Regulate? Evidence from Fairness Opinion Providers’ Conflict of Interest Disclosures",
+   "journal": "JAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Matthew A. Phillips",
+     "openalex_id": "A5056339531",
+     "source_url": "https://www.mattphillipsphd.me/home/research",
+     "snippet": "ives. Overall, our findings suggest that M&A announcement returns influence managerial risk-taking following acquisitions. Odd Lots & Optics: Manipulation in Response to Scrutiny with Charles Downing, Bradford (Levy) Lynch and Eric So (minor revision requested at Journal of Accounting Research) SSRN",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Odd Lots & Optics: Manipulation in Response to Scrutiny",
+   "journal": "JAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Wentao Yao",
+     "openalex_id": "A5059982598",
+     "source_url": "https://sites.google.com/view/wentaoyao",
+     "snippet": "Emissions: Evidence from Meeting Earnings Benchmarks , with Jacob Thomas (Yale), Frank Zhang (Yale), and Wei Zhu (UIUC) Revise and Resubmit at Journal of Accounting Research Feathers and Fiscal Policy: The Ecological Consequences of Corporate Tax , with Jacob Thomas (Yale), Frank Zhang (Yale), and W",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Quantifying the Ecological Costs of Corporate Toxic Emissions: Evidence from Meeting Earnings Benchmarks",
+   "journal": "JAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "John C. Heater",
+     "openalex_id": "A5022238618",
+     "source_url": "https://www.johnheater.com/?page_id=33",
+     "snippet": "With Doron Reichmann R&R at Journal of Accounting Research Abstract",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Response Latency as a Cue to Management Deception",
+   "journal": "JAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Jordan Schoenfeld",
+     "openalex_id": "A5042868249",
+     "source_url": "http://www.jordanschoenfeld.com/Jordan_Schoenfeld_CV.pdf",
+     "snippet": "Revenue-Sharing Real Estate Leases and the Contracting Role of Accounting Information R&R at the Journal of Accounting Research (with V. Nagar) Port Congestion, Management Disclosures, and Firm Operations",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Revenue-Sharing Real Estate Leases and the Contracting Role of Accounting Information",
+   "journal": "JAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Yue Zhang",
+     "openalex_id": "A5081644056",
+     "source_url": "https://sites.google.com/view/yuezhang/research",
+     "snippet": "\"Strategic Disclosure in R&D Races: Theory and Evidence\", with Xiang Shao, and Sang Wu. R&R, Journal of Accounting Research Presented at Baruch College, Baruch-Fordham-Rutgers Accounting Symposium, EIASM workshop on accounting & economics, AES Inaugural Conference",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Strategic Disclosure in R&D Races: Theory and Evidence",
+   "journal": "JAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Jason Sandvik",
+     "openalex_id": "A5047678873",
+     "source_url": "https://jasonsandvik.com/wp-content/uploads/2026/05/sandvik-cv.pdf",
+     "snippet": "Rob Jennings, Lisa LaViers, and Ethan Rouen – Revise and Resubmit: Journal of Accounting Research – Presentations: 2024 Arizona Junior Conference, ∗ HBS, University of Arizona (Acct.), ∗ 2025 MAS",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "The Effects of Human Capital Disclosures on Professional Investors’ Assessments of Firm Risk",
+   "journal": "JAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Yue Zhang",
+     "openalex_id": "A5081644056",
+     "source_url": "https://sites.google.com/view/yuezhang/research",
+     "snippet": "ates: Evidence from the Sunshine Act and Pharmaceutical Marketing”, with Edward J. Riedl, Fangbo Si, and Scarlett Song. R&R, Journal of Accounting Research Presented at Boston University, Haskayne and Fox Accounting Research Conference, Jinan University, Baruch College, University of Wisconsin-Madis",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Unintended Consequences of Disclosure Mandates: Evidence from the Sunshine Act and Pharmaceutical Marketing",
+   "journal": "JAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Pietro Bonetti",
+     "openalex_id": "A5058006404",
+     "source_url": "https://www.iese.edu/wp-content/uploads/2025/01/CV_Pietro-Bonetti-2026.pdf",
+     "snippet": "Attacks, with Tati Fontana. Second Round at JAR – Revising for resubmission 2. Internalizing Externalities through Public Pressure: Transparency Regulation for Fracking and",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Unveiling Government Disclosures: Evidence from Government Transparency on Terrorist Attacks",
+   "journal": "JAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Miao Liu",
+     "openalex_id": "A5141081598",
+     "source_url": "https://miao-liu.com/index.html",
+     "snippet": "“When Charts Clarify and Mislead: Visual Disclosure in Earnings Call Presentations” R&R Journal of Accounting Research",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "When Charts Clarify and Mislead: Visual Disclosure in Earnings Call Presentations",
+   "journal": "JAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Felix W. Vetter",
+     "openalex_id": "A5005982263",
+     "source_url": "https://mitsloan.mit.edu/shared/ods/documents?PersonID=249508&DocID=14225",
+     "snippet": "“Accounting Service Offshoring and Reporting Quality” - with Fabio da Silve Soares, Jason Kim, and Nemit Shroff (R&R at Management Science) “Accounting Software Adoption Through the Lens of Directed Technological Change”",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Accounting Service Offshoring and Reporting Quality",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Sunil Parupati",
+     "openalex_id": "A5071189550",
+     "source_url": "https://sites.google.com/view/sunilparupati/research",
+     "snippet": "[3]. Beyond Representation: Workforce Gender Diversity, Firm Outcomes, and the Cultural Imperative (with Vikram Nanda, Kirti Sinha, Tuhin Harit) Revise and Resubmit at Management Science Developed from Summer Paper",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Beyond Representation: Workforce Gender Diversity, Firm Outcomes, and the Cultural Imperative",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Jenny Zha Giedt",
+     "openalex_id": "A5051871900",
+     "source_url": "http://www.jennyzha.com/",
+     "snippet": "high-level changes such as the sale of the enterprise; a divestiture of certain assets; CEO, CFO, or Chairperson turnover; dividend termination; and bankruptcy or delisting. [Revise & Resubmit, Management Science] [8] Zha Giedt, J.",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Companies' Strategic Reviews: Determinants and Outcomes",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Anastassia Fedyk",
+     "openalex_id": "A5035661072",
+     "source_url": "https://sites.google.com/berkeley.edu/fedyk/research",
+     "snippet": "abina, Alex He, and James Hodson) June 2024. Data innovation complementarity and firm growth. (with Roxana Mihet, Kumar Rishabh, and Orlando Gomes) December 2025. Revise and Resubmit at Management Science. Lehman's lemons: Do career disruptions matter for the top 5%? (with James Hodson) August 2023.",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Data innovation complementarity and firm growth",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Zheng Xiang",
+     "openalex_id": "A5100301024",
+     "source_url": "https://www.business.uconn.edu/person/xiang-zheng/",
+     "snippet": "Do Fintech Shadow Banks Compete with Technological Advantages? Evidence from Mortgage Lending, with Sijie Wang and Siyi Shen Revise & Resubmit, Management Science How Does VC Engagement Direct Startup Experimentation? with Xuelin Li, Sijie Wang, and Jiajie Xu",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Do Fintech Shadow Banks Compete with Technological Advantages? Evidence from Mortgage Lending",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Summer Liu",
+     "openalex_id": "A5075510130",
+     "source_url": "https://mays.tamu.edu/wp-content/uploads/2023/08/CV_Summer-Liu_Jan-2026_updated.pdf",
+     "snippet": "Brandon Gipper, and Lisa Tiplady. • Revise and Resubmit at Management Science. • Presented at the 2025 PCAOB/Management Science Registered Reports Conference.",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Engagement Quality Review Partner Assignment and Effectiveness in U.S. Audits",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Oscar Timmermans",
+     "openalex_id": "A5059696202",
+     "source_url": "https://oscar-timmermans.github.io/cv/cv.pdf",
+     "snippet": "(with Chris Armstrong, Luzi Hail, and Rachel Zhang) Revise and resubmit at Management Science “ Shareholder Priming: Evidence from Say on Pay”",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Executive Compensation Contracts in the Presence of Adverse Selection",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Miao Liu",
+     "openalex_id": "A5034866430",
+     "source_url": "https://miao-liu.com/index.html",
+     "snippet": "“Executives vs. Chatbots: Unmasking Insights through Human-AI Differences in Earnings Conference Q&A” R&R Management Science",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Executives vs. Chatbots: Unmasking Insights through Human-AI Differences in Earnings Conference Q&A",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "K.C. John Wei",
+     "openalex_id": "A5062253298",
+     "source_url": "https://www.polyu.edu.hk/af/-/media/department/af/people/acad_staff/prof-kc-john-wei/johnwei_vita_af-2026-1-21.pdf?rev=9fd3081f47c445de93a9141100dc50b8&hash=5C451B4BCF851DDA4968ACF4EB582826",
+     "snippet": "1. Kim, Jaehyeon, Dongyoung Lee, Sang Soo Park, and K.C. John Wei, 2025, Female board reforms and earnings management, Management Science, second round major revise-and-resubmit. 7",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Female board reforms and earnings management",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Xiang Zheng",
+     "openalex_id": "A5100301024",
+     "source_url": "https://www-business.media.uconn.edu/wp-content/uploads/sites/969/2021/08/Xiang_CV_Web-1.pdf",
+     "snippet": "Strahan, and Song Zhang – Revise & Resubmit, Management Science – Media coverage: Hutchins Roundup",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "GSE Restrictions, Credit Supply, and Rental Market Spillovers",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Joshua T. White",
+     "openalex_id": "A5015559658",
+     "source_url": "https://joshua-t-white.com/research/",
+     "snippet": "Human capital disclosure and workforce turnover Working Paper · Revise & Resubmit, Management Science · with Aiyesha Dey, Peter Haslag, and Berk Sensoy In this paper, we examine whether firms’ human capital disclosures reflect underlying workforce dynamics.",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Human capital disclosure and workforce turnover",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Alan L. Zhang",
+     "openalex_id": "A5101511635",
+     "source_url": "https://www.alanlzhang.com/",
+     "snippet": "rs Managerial Risk Assessment and Fund Performance: Evidence from Textual Disclosure (with Sean Cao and Baozhong Yang), revise & resubmit, Management Science. We use natural language processing (NLP) tools to extract mutual fund managers' risk assessment from their narrative discussions, which predi",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Managerial Risk Assessment and Fund Performance: Evidence from Textual Disclosure",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Jody Grewal",
+     "openalex_id": "A5085314990",
+     "source_url": "https://jody-grewal.weebly.com/research.html",
+     "snippet": "\"Mandatory Energy Assessments and Corporate Climate Behavior\" (with Anson Jiang). Revise & Resubmit at Management Science Despite large potential cost savings, firms frequently underinvest in energy efficiency. We examine whether mandatory information acquisition, absent public disclosure or require",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Mandatory Energy Assessments and Corporate Climate Behavior",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Byeong-Je An",
+     "openalex_id": "A5045098305",
+     "source_url": "https://sites.google.com/view/byeongje-an/research",
+     "snippet": "Mandatory vs. voluntary ESG disclosure, efficiency, and real effects, with Cyrus Aghamolla Revise and Resubmit, Management Science Media Coverage: Columbia Law School Blue Sky Blog",
+     "checked_date": "2026-10-16"
+    },
+    {
+     "name": "Cyrus Aghamolla",
+     "openalex_id": "A5076756467",
+     "source_url": "https://business.rice.edu/sites/default/files/2026-09/cyrus-aghamolla-cv.pdf",
+     "snippet": "Mandatory vs. voluntary ESG disclosure, efficiency, and real effects (with Byeong-Je An), Revise and resubmit, Management Science The (going) public option: Equity market financing in the hospital industry (with Jash Jain and",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Mandatory vs. voluntary ESG disclosure, efficiency, and real effects",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Joshua T. White",
+     "openalex_id": "A5015559658",
+     "source_url": "https://joshua-t-white.com/research/",
+     "snippet": "Market-based incentives for audit quality Working Paper · Revise & Resubmit, Management Science · with Andrew Acito et al. We analyze how equity markets react to the public release of U.S. audit-firm inspection reports.",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Market-based incentives for audit quality",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Ben Lourie",
+     "openalex_id": "A5040540091",
+     "source_url": "https://merage.uci.edu/_files/documents/faculty-profiles/Ben-Lourie-CV-Oct2026.pdf",
+     "snippet": "(with Holly He, Mark Ma and Chenqi Zhu) *2nd round – Management Science 3",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Operating Lease Recognition and Credit Assessment by Banks",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Jason Sandvik",
+     "openalex_id": "A5047678873",
+     "source_url": "https://jasonsandvik.com/",
+     "snippet": "Personal Taxes and Unrelated Mergers and Acquisitions Revise and Resubmit: Management Science, (View on SSRN) The Impact of Workplace Gender Diversity Disclosures on Job Selection Decisions",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Personal Taxes and Unrelated Mergers and Acquisitions",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Aneesh Raghunandan",
+     "openalex_id": "A5073952785",
+     "source_url": "https://www.aneeshraghunandan.com/research/",
+     "snippet": "Reputation-Building Actions After Corporate Social Irresponsibility (with Wei Cai, Shiva Rajgopal, and Wenxin Wang) Revise and Resubmit, Management Science Racial Disparities in the Processing of Whistleblower Complaints (with Marco Errico and Sinja Leonelli)",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Reputation-Building Actions After Corporate Social Irresponsibility",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Xingyu Shen",
+     "openalex_id": "A5082489174",
+     "source_url": "https://sites.google.com/view/xingyu-shen/research",
+     "snippet": "[1] Tenure Contracts and Human Capital Allocation (with Vivek Pandey, Joanna S. Wu, and Xixi Xiao) Revise and Resubmit at Management Science Presentations: HARC (2025), Chinese University of Hong Kong, Rice University, University of Rochester, and Virginia Tech",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Tenure Contracts and Human Capital Allocation",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Kimberlyn Munevar",
+     "openalex_id": "A5093126771",
+     "source_url": "https://mays.tamu.edu/wp-content/uploads/2026/05/Kimberlyn-Munevar-CV-202605.pdf",
+     "snippet": "(with Omri Even-Tov, Ben Lourie, and Alex Nekrasov) (Link) - Revise and resubmit at Management Science 2. “No Fees to Play: Trading Fees, Gamification, and Retail Investor Behavior” (with Omri",
+     "checked_date": "2026-10-16"
+    },
+    {
+     "name": "Ben Lourie",
+     "openalex_id": "A5040540091",
+     "source_url": "https://merage.uci.edu/_files/documents/faculty-profiles/Ben-Lourie-CV-Oct2026.pdf",
+     "snippet": "(with Omri Even Tov, Kimberlyn Munevar and Alex Nekrasov) *2nd Round – Management Science Teaching",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "The Effect of AI on Retail Investor Behavior: Evidence from Account-Level Trading Data",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Lili Dai",
+     "openalex_id": "A5038905034",
+     "source_url": "https://sites.google.com/site/ldaiprofile/",
+     "snippet": "search. \"What Determines the Composition of Crowdsourced Investment Articles?,\" with Wei Chen, and Hun-Tong Tan (SSRN). Revise & Resubmit at Management Science. \"Innovation Spillover through Information Acquisition of SEC Filings,\" with Gary Monroe, Vic Naiker, and Ling Qin (SSRN). Revise & Resubmit",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "What Determines the Composition of Crowdsourced Investment Articles?",
+   "journal": "MS"
+  },
+  {
+   "authors": [
+    {
+     "name": "Hsiang-Chieh Yang",
+     "openalex_id": "A5001430525",
+     "source_url": "https://alexhcyang.here.now/",
+     "snippet": "CECL and Peer Effects in Bank Loan Loss Provisioning With Sung Gon Chung and Minjae Kim. R&R, Review of Accounting Studies Accounting Credibility and M&A Decisions: Evidence from Acquisitions of Small Private Banks",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "CECL and Peer Effects in Bank Loan Loss Provisioning",
+   "journal": "RAST"
+  },
+  {
+   "authors": [
+    {
+     "name": "Chengzhu Sun",
+     "openalex_id": "A5036872838",
+     "source_url": "https://sites.google.com/view/czsun",
+     "snippet": "Do Firms Walk the Talk in Adopting Greenpay? , with Kevin C. W. Chen and Zilan Yang Review of Accounting Studies, R&R Does regulatory oversight discipline ESG funds to walk the talk?, with Dichu Bao, Nancy Su and Huai Zhang",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Do Firms Walk the Talk in Adopting Greenpay?",
+   "journal": "RAST"
+  },
+  {
+   "authors": [
+    {
+     "name": "Zvi Singer",
+     "openalex_id": "A5079693735",
+     "source_url": "https://www.hec.ca/sites/default/files/2026-08/Zvi-Singer-resume-EN.pdf",
+     "snippet": "Burke, J., J. Luo, Z. Singer, and J. Zhang. ESG Assurance and the Comparability of Greenhouse Gas Emission Disclosures. 2nd round, Review of Accounting Studies. Pruijssers, J., G. Krishnan, C. What Drives Job Satisfaction and Turnover Intentions",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "ESG Assurance and the Comparability of Greenhouse Gas Emission Disclosures",
+   "journal": "RAST"
+  },
+  {
+   "authors": [
+    {
+     "name": "Aneesh Raghunandan",
+     "openalex_id": "A5073952785",
+     "source_url": "https://www.aneeshraghunandan.com/research/",
+     "snippet": "Hiding in Plain Sight: Online Complaints as an Alternative to Whistleblowing (with Jeroen Koenraadt and Thomas Ruchti) Revise and Resubmit, Review of Accounting Studies Mandatory US Subsidy Disclosures: Early Evidence (with Dian Jiao, Min Jun Song, and Shiva Rajgopal)",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Hiding in Plain Sight: Online Complaints as an Alternative to Whistleblowing",
+   "journal": "RAST"
+  },
+  {
+   "authors": [
+    {
+     "name": "Frank Weikai Li",
+     "openalex_id": "A5047951787",
+     "source_url": "https://sites.google.com/view/frankweikaili/research",
+     "snippet": "Presented at: CICF 2021; China Investment Corporation; ABRI Seminar; NTU; Bank of America; RBFC 2022; R&R at Review of Accounting Studies 3. The Local Downside Risk Premium, with Zilong Niu",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Naïve Earnings Growth Extrapolation",
+   "journal": "RAST"
+  },
+  {
+   "authors": [
+    {
+     "name": "Tyler J. Kleppe",
+     "openalex_id": "A5030769077",
+     "source_url": "https://gattonweb.uky.edu/Vitas/TKL227_Vita.pdf",
+     "snippet": "Moon • R&R at Review of Accounting Studies • Accepted conferences: AAA Auditing Section Midyear Meeting, Deloitte/University of Kansas",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "The Effects of Accounting Firm Investments in Learning and Development Centers",
+   "journal": "RAST"
+  },
+  {
+   "authors": [
+    {
+     "name": "Roberto Vincenzi",
+     "openalex_id": "A5099584754",
+     "source_url": "https://sites.google.com/view/robertovincenzi/home-page",
+     "snippet": " \"The Role of Financial Information in Supply Chains: Evidence from Electronic Business Registers in Europe.\" 2nd Round R&R at Review of Accounting Studies. With Antonio Marra (Bocconi), Ron Shalev (University of Toronto), and Vincent Giese (University of Mannheim) \"Are Merger Synergy Disclosures Cr",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "The Role of Financial Information in Supply Chains: Evidence from Electronic Business Registers in Europe",
+   "journal": "RAST"
+  },
+  {
+   "authors": [
+    {
+     "name": "George Drymiotes",
+     "openalex_id": "A5069077923",
+     "source_url": "https://www.tcu.edu/directory/files/Drymiotes-George-CV-Jan2026.pdf",
+     "snippet": "nforcement: The Role of Corporate Boards (with Z. Liu and K. Sivaramakrishnan), R&R at CAR. Welfare Implications of CEO Overconfidence (with R. Balakrishnan, J. Tian, and K. Sivaramakrishnan), R&R at RAST. Real Effects of Overconfidence and Debt Covenants (with Z. Liu and K. Sivaramakrishnan), under",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Welfare Implications of CEO Overconfidence",
+   "journal": "RAST"
+  },
+  {
+   "authors": [
+    {
+     "name": "Mary Vernon",
+     "openalex_id": "A5070277408",
+     "source_url": "https://business.uic.edu/profiles/vernon-mary/",
+     "snippet": "Research Currently in Progress \"Accounting for Uncertain Tax Benefits.\" with Mary Cowx. Revise and resubmit at The Accounting Review. \"The Determinants of the EU Tax Haven List.\" with Adrienne DePaul and Frank Murphy.",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Accounting for Uncertain Tax Benefits",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Musa Subasi",
+     "openalex_id": "A5009238230",
+     "source_url": "https://terpconnect.umd.edu/~msubasi/",
+     "snippet": "- R&R at The Accounting Review.",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "AI-Powered Analysts",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Brian Robert Rountree",
+     "openalex_id": "A5069860010",
+     "source_url": "https://business.rice.edu/sites/default/files/2025-08/brian-rountree-cv.pdf",
+     "snippet": "Peyravan, L., B. Rountree, and S. Sivaramakrishnan. Analyst Competition in the Presence of Differential Private Information. Revise and resubmit in The Accounting Review.",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Analyst Competition in the Presence of Differential Private Information",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Hailey B. Ballew",
+     "openalex_id": "A5078445017",
+     "source_url": "https://business.rice.edu/sites/default/files/2026-04/ballew-cv.pdf",
+     "snippet": "Lending Laws, with Geoffrey Pears (Rice University) Revising for 2nd round at The Accounting Review Hawaii Accounting Research Conference 2024, CFAR Accounting Brownbag Seminar at",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Banks’ commitment to social responsibility in lending amid reduction to the enforcement of Fair Lending Laws",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Jordan Schoenfeld",
+     "openalex_id": "A5042868249",
+     "source_url": "http://www.jordanschoenfeld.com/Jordan_Schoenfeld_CV.pdf",
+     "snippet": "Director Turnover after Monitoring Failures: A Reexamination and New Evidence R&R at The Accounting Review (with T. Liu and S. Malik) Revenue-Sharing Real Estate Leases and the Contracting Role of Accounting Information",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Director Turnover after Monitoring Failures: A Reexamination and New Evidence",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Oscar Timmermans",
+     "openalex_id": "A5059696202",
+     "source_url": "https://oscar-timmermans.github.io/cv/cv.pdf",
+     "snippet": "(with Jeroen Koenraadt) Revise and resubmit at The Accounting Review “ Executive Compensation Contracts in the Presence of Adverse Selection”",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Exit through the Glassdoor: Employee-Generated Disclosures and Labor Markets",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Roberto Vincenzi",
+     "openalex_id": "A5099584754",
+     "source_url": "https://accounting.unibocconi.eu/sites/default/files/media/cv/CV_2026.pdf",
+     "snippet": "2. “External Legal Counsels as Transaction Cost Engineers in Syndicated Loan Contracting”, R&R at The Accounting Review [with Peter Pope (LSE) and Peeyush Taori (HKU)]",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "External Legal Counsels as Transaction Cost Engineers in Syndicated Loan Contracting",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Yue Zhang",
+     "openalex_id": "A5081644056",
+     "source_url": "https://www.baruch.cuny.edu/profiles/faculty/Yue-Zhang",
+     "snippet": "Zhang, Y., Park, J., & Tong, L.(n.d.). Fictional Experiments in Patent Disclosures. In Progress. 1st round R&R, The Accounting Review. Co-authored with former doctoral student (Lu Tong). Zhang, Y., Riedl, E., Song, S., & Si, F.(n.d.). Unintended Consequences of Disclosure Mandates: Evidence from the",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Fictional Experiments in Patent Disclosures",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "MaryJane Rabier",
+     "openalex_id": "A5027393813",
+     "source_url": "https://sites.google.com/view/maryjane-rabier/",
+     "snippet": "irms’ internal information systems and the wages of female and Black workers (with Seth Carnahan and Mary Ellen Carter) Revise and resubmit at The Accounting Review This study explores the association between higher-quality internal information systems and gender and race wage gaps in organizations.",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Firms’ internal information systems and the wages of female and Black workers",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Qiang Wu",
+     "openalex_id": "A5061498333",
+     "source_url": "https://sites.google.com/view/qiangwu/working-papers",
+     "snippet": "g, SSRN “Human Readability of Disclosures in a Machine-Readable World”, with Andy Call, Ben Wang, and Liwei Weng, under R&R at The Accounting Review, SSRN \"Discrimination From Below: Evidence from the Glassdoor CEO Ratings.\" with Shenglan Chen, Hui Ma, Emma Xu, and Hao Zhang, Under R&R at Accounting",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Human Readability of Disclosures in a Machine-Readable World",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Lili Dai",
+     "openalex_id": "A5038905034",
+     "source_url": "https://sites.google.com/site/ldaiprofile/",
+     "snippet": "nnovation Spillover through Information Acquisition of SEC Filings,\" with Gary Monroe, Vic Naiker, and Ling Qin (SSRN). Revise & Resubmit at The Accounting Review. \"Digital Footprints as Collateral for Debt Collection,\" with Jianlei Han, Jing Shi, and Bohui Zhang (SSRN), Revise & Resubmit at Financi",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Innovation Spillover through Information Acquisition of SEC Filings",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Aneesh Raghunandan",
+     "openalex_id": "A5073952785",
+     "source_url": "https://www.aneeshraghunandan.com/cv/",
+     "snippet": "Media Coverage of Employment Discrimination (with Devin Shanthikumar and Elizabeth Tori) Revise and Resubmit, The Accounting Review Hiding in Plain Sight: Online Complaints as an Alternative to Whistleblowing (with Jeroen Koenraadt and Thomas Ruchti)",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Media Coverage of Employment Discrimination",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Nathan G. Lundstrom",
+     "openalex_id": "A5056645928",
+     "source_url": "https://business.ku.edu/sites/business/files/attached-files/CV2026_NateLundstrom.pdf",
+     "snippet": "Accounting Estimates.” o Revising for Resubmission to The Accounting Review (2nd Round). o With Chan Li, Ryan Robinson, and Tonghui Xu (all University of Kansas)",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Polish or Purge?: The Effects of Critical Audit Matter Disclosure on Management’s Critical Accounting Estimates",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Michael P Carniol",
+     "openalex_id": "A5037852621",
+     "source_url": "https://sites.rutgers.edu/michael-carniol/research/",
+     "snippet": "Working papers “Program ratio bias,” with Kari Lee (Rutgers University) and Carolyn Levine (University of Delaware). Revise-and-resubmit, The Accounting Review. “Quasi-Credit Ratings for the Entire Nonprofit Sector.” Solo-authored. Under review, Nonprofit and Voluntary Sector Quarterly. SSRN",
+     "checked_date": "2026-10-16"
+    },
+    {
+     "name": "Kyungha Lee",
+     "openalex_id": "A5022715791",
+     "source_url": "https://www.business.rutgers.edu/sites/default/files/documents/faculty/cv-kyungha-lee.pdf",
+     "snippet": "“Program Ratio Bias” with Michael Carniol and Carolyn Levine 1st round R&R at The Accounting Review WORKING PAPERS",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Program Ratio Bias",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Brian Robert Rountree",
+     "openalex_id": "A5069860010",
+     "source_url": "https://business.rice.edu/sites/default/files/2025-08/brian-rountree-cv.pdf",
+     "snippet": "Ferreira, P, W. Gonzalez, B. Rountree and K. Sivaramakrishnan. Re-examining the Timing Role of Accrual Accounting. Revise and resubmit in The Accounting Review. Peyravan, L., B. Rountree, and S. Sivaramakrishnan. Analyst Competition in the",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Re-examining the Timing Role of Accrual Accounting",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Russell E. Jame",
+     "openalex_id": "A5079349708",
+     "source_url": "https://gattonweb.uky.edu/Vitas/RJA233_Vita.pdf",
+     "snippet": "“Sell-Side Bus Tours”, 2026, (with Dan Bradley and Jared Williams) - Revise and Resubmit: The Accounting Review -",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "Sell-Side Bus Tours",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Miao Liu",
+     "openalex_id": "A5141081598",
+     "source_url": "https://miao-liu.com/index.html",
+     "snippet": "“The Credibility of Non-Answers in Conference Calls: a Real-time Market Response Approach” R&R The Accounting Review",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "The Credibility of Non-Answers in Conference Calls: a Real-time Market Response Approach",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "You‐il Park",
+     "openalex_id": "A5026978309",
+     "source_url": "https://shidler.hawaii.edu/soa/directory/chris-park",
+     "snippet": ". \"The Deterrent Effect of SEC Regional Reorganization on Insider Trading Profits,\" with Asad Kausar and Hangsoo Kyung. Revise and resubmit at The Accounting Review. \"When Policymakers Step In, Do Lenders Step Back? Evidence from State Greenhouse Gas Emission Reduction Adoptions,\" with Peter Demerji",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "The Deterrent Effect of SEC Regional Reorganization on Insider Trading Profits",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Jason Sandvik",
+     "openalex_id": "A5047678873",
+     "source_url": "https://jasonsandvik.com/",
+     "snippet": "The Impact of AI Evaluators and Incentive Schemes on Employee Idea Sharing Revise and Resubmit: The Accounting Review, (View on SSRN) Understanding CEO Activism: Initial Insights and Future Research Directions",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "The Impact of AI Evaluators and Incentive Schemes on Employee Idea Sharing",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Jason Sandvik",
+     "openalex_id": "A5047678873",
+     "source_url": "https://jasonsandvik.com/wp-content/uploads/2026/05/sandvik-cv.pdf",
+     "snippet": "Jasmijn Bol, Lisa LaViers, and Kyle Mao – Revise and Resubmit: The Accounting Review – Presentations: ∗ 2025 ABO Annual Meeting, ∗ 2025 ABOVE Virtual Seminar Series, 2026 MAS",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "The Impact of an AI Evaluator on Employee Idea Sharing: Evidence from an Experiment",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Wei Li",
+     "openalex_id": "A5019783143",
+     "source_url": "https://sites.google.com/view/wei-li/research",
+     "snippet": "The Importance of Financial Reporting to Supply Chain Contracting: Evidence from Private Firms, with Yangyang Chen, Zihui Li, and Ju Mao R&R at The Accounting Review Permanent Working Papers",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "The Importance of Financial Reporting to Supply Chain Contracting: Evidence from Private Firms",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "You‐il Park",
+     "openalex_id": "A5026978309",
+     "source_url": "https://shidler.hawaii.edu/soa/directory/chris-park",
+     "snippet": "Selected Working Papers \"The SEC Reorganization and Financial Reporting,\" with Asad Kausar. Revise and resubmit at The Accounting Review. \"The Deterrent Effect of SEC Regional Reorganization on Insider Trading Profits,\" with Asad Kausar and Hangsoo Kyung. Revise and resubmit at The Accounting Review",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "The SEC Reorganization and Financial Reporting",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Vivian W. Fang",
+     "openalex_id": "A5059132656",
+     "source_url": "https://fangvivian.weebly.com/uploads/2/3/2/7/23272078/vivianfang_cv_june_2026.pdf",
+     "snippet": "▪ “The Signaling Role of Seemingly Myopic Investment Behavior” (with Cyrus Aghamolla and Renhui Fu) TAR, R&R ▪",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "The Signaling Role of Seemingly Myopic Investment Behavior",
+   "journal": "TAR"
+  },
+  {
+   "authors": [
+    {
+     "name": "Stephen J. Lusch",
+     "openalex_id": "A5025619659",
+     "source_url": "https://gattonweb.uky.edu/Vitas/SLU255_Vita.pdf",
+     "snippet": " Rulings and Tax Opinions in Corporate Spinoffs” with Shannon Chen (University of Arizona), Frank Murphy (University of Connecticut), and Junwei Xia (Texas A&M University)—Revise and Resubmit at The Accounting Review “Sample Heterogeneity in Archival Accounting Research: Implications for Coefficient",
+     "checked_date": "2026-10-16"
+    }
+   ],
+   "title": "When the IRS Speaks: Investor Valuation of Private Letter Rulings and Tax Opinions in Corporate Spin-offs",
+   "journal": "TAR"
+  }
+ ]
+}

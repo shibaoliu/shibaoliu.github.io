@@ -17,6 +17,9 @@ SITE = json.loads((ROOT / "data/site.json").read_text())
 PAPERS_DATA = json.loads((ROOT / "data/papers.json").read_text())
 PAPERS = PAPERS_DATA["papers"]
 THEMES = PAPERS_DATA["themes"]
+# The AcctRes tab is built only from reviewed tracker entries (rr-tracker/data/rr_public.json).
+TRACKER_FILE = ROOT / "rr-tracker/data/rr_public.json"
+TRACKER = json.loads(TRACKER_FILE.read_text()) if TRACKER_FILE.exists() else None
 BY_SLUG = {p["slug"]: p for p in PAPERS}
 BASE = SITE["domain"].rstrip("/")
 
@@ -31,9 +34,9 @@ STATUS_LABEL = {
 def nav_items():
     items = [("index.html", "Home"), ("cv.html", "CV"), ("research.html", "Research"),
              ("teaching.html", "Teaching"), ("presentations.html", "Presentations")]
-    # The R&R tracker tab appears only once rr-tracker/index.html has been built.
-    if (ROOT / "rr-tracker/index.html").exists():
-        items.append(("rr-tracker/index.html", "Accounting R&amp;R Tracker"))
+    # The AcctRes (R&R tracker) tab appears only once reviewed tracker data exist.
+    if TRACKER:
+        items.append(("rr-tracker/index.html", "AcctRes"))
     return items
 
 
@@ -190,6 +193,76 @@ def page_hero(kind, eyebrow, h1, lede, stats=""):
 </section>"""
 
 
+# ── AcctRes: accounting R&R tracker ─────────────────────────────────
+JOURNAL_NAME = {"JAE": "Journal of Accounting and Economics", "JAR": "Journal of Accounting Research",
+                "TAR": "The Accounting Review", "CAR": "Contemporary Accounting Research",
+                "RAST": "Review of Accounting Studies", "MS": "Management Science"}
+
+
+def build_tracker():
+    T, pre = TRACKER, "../"
+    entries = sorted(T["entries"], key=lambda x: (list(JOURNAL_NAME).index(x["journal"]), x["title"].lower()))
+    cards = []
+    for i, x in enumerate(entries):
+        who = "; ".join(f'{e(au["name"])} (<a href="{e(au["source_url"])}" target="_blank" rel="noopener">source</a>, '
+                        f'checked {e(au["checked_date"])})' for au in x["authors"])
+        names = " ".join(au["name"] for au in x["authors"])
+        quote = "".join(f'<blockquote>{e(au["snippet"])}</blockquote>' for au in x["authors"])
+        search = " ".join([x["title"], names, x["journal"], JOURNAL_NAME[x["journal"]]]).lower()
+        cards.append(f"""<article class="paper rr" data-journal="{x['journal']}" data-order="{i}"
+  data-title="{e(x['title'].lower())}" data-author="{e(x['authors'][0]['name'].split()[-1].lower())}"
+  data-checked="{e(max(au['checked_date'] for au in x['authors']))}" data-search="{e(search)}">
+  <div class="paper-head"><span class="paper-kicker">{e(JOURNAL_NAME[x['journal']])}</span><span class="status-pill status-review">R&amp;R &middot; {x['journal']}</span></div>
+  <h3>{e(x['title'])}</h3>
+  <p class="paper-authors">Listed by {who}</p>
+  <details class="paper-abstract"><summary>Wording on the author's page</summary>{quote}</details>
+</article>""")
+    counts = {j: sum(x["journal"] == j for x in entries) for j in JOURNAL_NAME}
+    chips = [f'<button type="button" class="chip" data-journal="all" aria-pressed="true">All<span class="chip-n">{len(entries)}</span></button>']
+    chips += [f'<button type="button" class="chip" data-journal="{j}" aria-pressed="false">{j}<span class="chip-n">{n}</span></button>'
+              for j, n in counts.items() if n]
+    c = T["coverage"]
+    stats = (f'{len(entries)} R&amp;R papers &middot; {c["authors_reached"]:,} of {c["authors_total"]:,} authors reached '
+             f'({100 * c["authors_reached"] / c["authors_total"]:.1f}%) &middot; last run {e(T["generated"])}')
+    hero = page_hero("research", "AcctRes", "Accounting R&amp;R Tracker",
+                     "Working papers that their authors publicly list as revise-and-resubmit at the five leading "
+                     "accounting journals (JAE, JAR, TAR, CAR, RAST) and Management Science.", stats)
+    method = "".join(f"<li>{m}</li>" for m in T["method"])
+    body = f"""{hero}
+<div class="research-toolbar">
+  <div class="wrap rt-row">
+    <label class="visually-hidden" for="rt-search">Search the tracker</label>
+    <input id="rt-search" class="rt-search" type="search" placeholder="Search titles and authors&hellip;">
+    <div class="chips" role="group" aria-label="Filter by journal">{''.join(chips)}</div>
+    <div class="rt-sort">
+      <label for="rt-sort" class="rt-sort-label">Sort</label>
+      <select id="rt-sort" class="rt-select">
+        <option value="journal">By journal</option>
+        <option value="author">Author A&ndash;Z</option>
+        <option value="title">Title A&ndash;Z</option>
+        <option value="checked">Recently checked</option>
+      </select>
+    </div>
+    <span id="rt-count" class="rt-count" aria-live="polite"></span>
+  </div>
+</div>
+<main id="main" tabindex="-1" class="main research-main">
+  <div class="wrap">
+    <div id="rr-list">
+{chr(10).join(cards)}
+    </div>
+    <p id="rt-empty" class="empty-state" hidden>No papers match that search.</p>
+    <section class="rr-method">
+      <h2 class="section-label">How this list is built</h2>
+      <ul class="rail-list">{method}</ul>
+    </section>
+  </div>
+</main>"""
+    return page(f'AcctRes: Accounting R&R Tracker | {SITE["name"]}', body, "rr-tracker/index.html", prefix=pre,
+                canonical="rr-tracker/index.html",
+                description="Working papers publicly listed as revise-and-resubmit at JAE, JAR, TAR, CAR, RAST and Management Science.")
+
+
 # ── Home ─────────────────────────────────────────────────────────────
 def build_home():
     if SITE.get("photo"):
@@ -234,10 +307,10 @@ def build_home():
     n_current = sum(p["status"] != "published" for p in PAPERS)
     n_talks = len(SITE.get("presentations", []))
     tracker = ""
-    if (ROOT / "rr-tracker/index.html").exists():
-        tracker = ('<div class="rail-block"><div class="rail-heading">Accounting R&amp;R Tracker</div>'
-                   '<div class="rail-note">Working papers that authors publicly list as revise-and-resubmit at JAE, JAR, '
-                   'TAR, CAR, RAST and Management Science, updated weekly.<br>'
+    if TRACKER:
+        tracker = ('<div class="rail-block"><div class="rail-heading">AcctRes: R&amp;R Tracker</div>'
+                   f'<div class="rail-note">{len(TRACKER["entries"])} working papers that authors publicly list as revise-and-resubmit at JAE, JAR, '
+                   'TAR, CAR, RAST and Management Science.<br>'
                    '<a href="rr-tracker/index.html">Open the tracker &rarr;</a></div></div>')
 
     sameas = [l["url"] for l in active_links() if l["url"].startswith("http")]
@@ -528,7 +601,8 @@ def main():
             out[f'papers/{p["slug"]}.html'] = build_paper_page(p)
     out["feed.xml"] = build_feed()
     pages = [k for k in out if k.endswith(".html")]
-    if (ROOT / "rr-tracker/index.html").exists():
+    if TRACKER:
+        out["rr-tracker/index.html"] = build_tracker()
         pages.append("rr-tracker/index.html")
     out["sitemap.xml"] = build_sitemap(pages)
     for path, text in out.items():

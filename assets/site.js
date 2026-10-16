@@ -13,6 +13,42 @@
     });
   });
 
+  // AcctRes tracker: search, journal filter, sort.
+  var rr = document.getElementById('rr-list');
+  if (rr) {
+    var rrs = Array.prototype.slice.call(rr.querySelectorAll('.rr'));
+    var rs = { j: 'all', q: '', sort: 'journal' };
+    var rsearch = document.getElementById('rt-search'), rsort = document.getElementById('rt-sort');
+    var rcount = document.getElementById('rt-count'), rempty = document.getElementById('rt-empty');
+    var rcmp = {
+      journal: function (a, b) { return a.dataset.order - b.dataset.order; },
+      author: function (a, b) { return a.dataset.author.localeCompare(b.dataset.author) || a.dataset.order - b.dataset.order; },
+      title: function (a, b) { return a.dataset.title.localeCompare(b.dataset.title); },
+      checked: function (a, b) { return b.dataset.checked.localeCompare(a.dataset.checked) || a.dataset.order - b.dataset.order; }
+    };
+    var rapply = function () {
+      rrs.slice().sort(rcmp[rs.sort]).forEach(function (x) { rr.appendChild(x); });
+      var n = 0;
+      rrs.forEach(function (x) {
+        var ok = (rs.j === 'all' || x.dataset.journal === rs.j) && (!rs.q || x.dataset.search.indexOf(rs.q) !== -1);
+        x.hidden = !ok; if (ok) n++;
+      });
+      rcount.textContent = n + (n === 1 ? ' paper' : ' papers');
+      rempty.hidden = n !== 0;
+    };
+    document.querySelectorAll('.chip[data-journal]').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        document.querySelectorAll('.chip[data-journal]').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+        chip.setAttribute('aria-pressed', 'true');
+        rs.j = chip.dataset.journal; rapply();
+      });
+    });
+    rsearch.addEventListener('input', function () { rs.q = rsearch.value.trim().toLowerCase(); rapply(); });
+    rsort.addEventListener('change', function () { rs.sort = rsort.value; rapply(); });
+    rapply();
+    return;
+  }
+
   var list = document.getElementById('paper-list');
   if (!list) return;
   var flat = document.getElementById('flat-list');
