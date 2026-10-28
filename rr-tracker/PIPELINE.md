@@ -190,3 +190,18 @@ A candidate counts as already published when Crossref has a journal article, in 
   - One expired download.ssrn.com link was replaced by its abstract page.
 - **Kept:** only checked links (52), stored in `data/verified_links.json`, which `05_publish.py` merges.
 - **Matching:** links are matched on title and URL together, because one wrong link shared its URL with a correct entry.
+
+## Weekly run (from 2026-10-28)
+
+Order: `01c_crossref_recent.py <since>` → `01b_local_dois.py` (author's lists) → `01b_local_dois.py data/crossref_recent` → `02_homepages.py` → `02c_directories.py` → `03_scan.py 0` → `04_staleness.py` → `04b_carryover.py data/prev_<last run>` → independent review of `review_in_new.json` plus every drop and every "published" flag → `05_publish.py` → `06_links.py` (only new links, which an independent link check must pass, are added to `verified_links.json`) → `05_publish.py` → `../build.py`.
+
+- **Where to run it:** Box Drive timed out on files in this folder on 2026-10-28, so that week's run was done in a local copy, and only the results were copied back.
+- **2026-10-28 run (covering two weeks):**
+  - Author list: 56 new top-5 articles from Crossref since 2026-10-01, plus the updated local lists, gave 2,993 accounting-5 author ids. That is 2,974 people when ids sharing an ORCID are merged, the figure used for coverage below.
+  - Scan: 1,158 authors scanned; 1,103 of 2,974 people had a page that could be read (37.1%). The share fell because the author list grew.
+  - Candidates: 161. 133 inherited an earlier verdict and 23 were new; the reviewer approved 15 and rejected 8 (6 duplicates, 2 with an unclear status).
+  - Melissa Martin's profile contradicted itself. This was resolved against her October 2026 CV, which lists all three papers as revise and resubmit.
+  - Dropped and checked: 3 that changed status (Schoenfeld and Phillips conditionally accepted, Fedyk forthcoming in MS) and 4 already published (Fedyk TAR, Cong MS, Fang TAR, Donahoo TAR).
+  - Kept with their old check date: 7 entries whose pages could not be read this week.
+- **Bug fixed:** `04_staleness.py` counted SSRN postings ("SSRN Electronic Journal", DOI prefix 10.2139) as publications. On 2026-10-16 that wrongly dropped Lourie's CAR R&R. It has been restored, and SSRN is now excluded.
+- **Result:** 113 public entries; 56 titles linked (62 verified links); 10 new links passed the independent check, 10/10 OK.

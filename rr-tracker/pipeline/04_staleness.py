@@ -35,6 +35,10 @@ def check(title, author):
     r.raise_for_status()
     fam = family(author)
     for it in r.json()["message"]["items"]:
+        # SSRN registers working papers as journal-articles in "SSRN Electronic Journal" (DOI prefix 10.2139):
+        # a posting, not a publication. Counting it as published wrongly dropped Lourie's CAR R&R on 2026-10-16.
+        if it["DOI"].lower().startswith("10.2139/") or "ssrn" in " ".join(it.get("container-title") or []).lower():
+            continue
         t = (it.get("title") or [""])[0]
         if difflib.SequenceMatcher(None, nz(t), nz(title)).ratio() < 0.90:
             continue
