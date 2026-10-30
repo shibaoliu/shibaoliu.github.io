@@ -113,6 +113,11 @@ def main():
     if not isinstance(verdicts, list):
         sys.exit("data/removed_review.json must be a list of verdicts")
     cd = load("carryover_dropped.json", {})
+    # guard against a forgotten run_date: it must not be older than this run's step 4b or the stored history
+    for name, d in (("carryover_dropped.json", cd.get("date", "")),
+                    ("rr_removed.json", load("rr_removed.json", {}).get("generated", ""))):
+        if d > TODAY:
+            sys.exit("run_stats.json run_date %s is older than %s (%s); set it to this run's date" % (TODAY, name, d))
     # step 4b's "page read, wording gone" records count only if 4b ran against the same previous run
     gone = cd.get("entries", []) if os.path.abspath(cd.get("prev", "")) == os.path.abspath(PREV) else []
     hist = load("rr_removed.json", {"entries": []})["entries"]
@@ -162,6 +167,10 @@ def main():
         elif v and v["status"] == "presumed_rejected" and not (h.get("wording_gone") and queried and not other):
             note = ("presumed_rejected refused: needs step 4b's record that this paper's page was read with the "
                     "wording gone, and a Crossref search this run that found the paper in no journal")
+            h.update(status="pending", evidence="", checked_date="")
+        elif h["status"] == "presumed_rejected" and not v:
+            # the verdict behind it was withdrawn: back to review
+            note = "presumed_rejected verdict no longer in removed_review.json"
             h.update(status="pending", evidence="", checked_date="")
         elif v:
             h.update(status=v["status"], evidence=v["evidence"], checked_date=v["checked_date"])

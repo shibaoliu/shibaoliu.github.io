@@ -138,8 +138,12 @@ def page(title, body, active="", prefix="", description="", canonical="", preren
               f"<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}"
               f"gtag('js',new Date());gtag('config','{gid}');</script>")
     if SITE.get("goatcounter"):
-        # GoatCounter visitor counts (no cookies). Local previews are not counted.
-        ga += (f'<script>window.goatcounter={{no_onload: location.hostname !== "{e(BASE.split("//")[-1])}"}};</script>\n'
+        # GoatCounter visitor counts (no cookies). Local previews are not counted. Opening any page with #mark-me
+        # flags that browser as the owner's, and its views are recorded under /me/<page>; #unmark-me clears it.
+        ga += ('<script>(function(){var me=false;try{if(location.hash==="#mark-me")localStorage.setItem("gc_me","1");'
+               'if(location.hash==="#unmark-me")localStorage.removeItem("gc_me");me=localStorage.getItem("gc_me")==="1";}'
+               'catch(x){}window.goatcounter={no_onload: location.hostname !== "' + e(BASE.split("//")[-1]) + '",'
+               'path: function(p){return me ? "/me" + p : p;}};})();</script>\n'
                f'<script data-goatcounter="https://{e(SITE["goatcounter"])}.goatcounter.com/count" '
                f'async src="//gc.zgo.at/count.js"></script>')
     return f"""<!DOCTYPE html>

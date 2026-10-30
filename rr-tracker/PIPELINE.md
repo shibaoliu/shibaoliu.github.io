@@ -222,6 +222,6 @@ Reviewer verdicts go in `removed_review.json` ({title, journal, status, evidence
 
 Step 4b counts a listed page as read only if it returned HTTP 200 with at least 300 characters of text and did not redirect to a different page; a redirect to a sign-in wall is not a read. 59 fetches in the 2026-10-28 log were HTTP 200 with less than 300 characters.
 
-Set `run_stats.json` `run_date` to the run's date before steps 5 and 5b.
+Set `run_stats.json` `run_date` to the run's date before steps 5 and 5b. Step 5b stops with a message if `run_date` is older than step 4b's `carryover_dropped.json` date or the stored history. A presumed_rejected entry whose verdict is withdrawn from `removed_review.json` goes back to pending.
 
 Backfilled for 2026-10-28 from that run's checked drops: 4 papers left the list, all accepted or published (Schoenfeld TAR and Phillips JAR conditionally accepted, Fedyk MS forthcoming, Fang TAR published). None was presumed rejected. An independent monitor re-derived the four and their statuses from the pages and Crossref on 2026-10-30. Fedyk TAR, Cong MS and Donahoo TAR were dropped as published that run but had not been on the public list before, so they do not appear.
