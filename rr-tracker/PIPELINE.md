@@ -193,9 +193,11 @@ A candidate counts as already published when Crossref has a journal article, in 
 
 ## Weekly run (from 2026-10-28)
 
-Order: `01c_crossref_recent.py <since>` → `01b_local_dois.py` (author's lists) → `01b_local_dois.py data/crossref_recent` → `02_homepages.py` → `02c_directories.py` → `03_scan.py 0` → `04_staleness.py` → `04b_carryover.py data/prev_<last run>` → independent review of `review_in_new.json` plus every drop and every "published" flag → `05_publish.py` → `06_links.py` (only new links, which an independent link check must pass, are added to `verified_links.json`) → `05_publish.py` → `../build.py`.
+Order: `01c_crossref_recent.py <since>` → `01b_local_dois.py` (author's lists) → `01b_local_dois.py data/crossref_recent` → `02_homepages.py` → `02c_directories.py` → `03_scan.py 0` → `04_staleness.py` → `04b_carryover.py data/prev_<last run>` → independent review of `review_in_new.json` plus every drop and every "published" flag → `05_publish.py` → `06_links.py` (only new links, which an independent link check must pass, are added to `verified_links.json`) → `05_publish.py` → `05b_removed.py data/prev_<last run>` (independent review of `removed_to_review.json`, verdicts into `removed_review.json`, then run 5b again) → `../build.py`.
 
-- **Where to run it:** Box Drive timed out on files in this folder on 2026-10-28, so that week's run was done in a local copy, and only the results were copied back.
+Before a run, copy the current `rr_public.json`, `rr_candidates.json` and `rr_review.json` into `data/prev_<date of the run that produced them>` (run_stats.json `run_date`); that folder is the `prev` argument of steps 4b and 5b. Example: the 2026-10-28 outputs go to `data/prev_20261028` before the next run.
+
+- **Where to run it:** the project moved to `/Volumes/2T/Data/Website` on 2026-10-30 (git clone of the published repo plus the local data). Box Drive had timed out on files here on 2026-10-28; the Box folder is now an archive.
 - **2026-10-28 run (covering two weeks):**
   - Author list: 56 new top-5 articles from Crossref since 2026-10-01, plus the updated local lists, gave 2,993 accounting-5 author ids. That is 2,974 people when ids sharing an ORCID are merged, the figure used for coverage below.
   - Scan: 1,158 authors scanned; 1,103 of 2,974 people had a page that could be read (37.1%). The share fell because the author list grew.
@@ -205,3 +207,21 @@ Order: `01c_crossref_recent.py <since>` → `01b_local_dois.py` (author's lists)
   - Kept with their old check date: 7 entries whose pages could not be read this week.
 - **Bug fixed:** `04_staleness.py` counted SSRN postings ("SSRN Electronic Journal", DOI prefix 10.2139) as publications. On 2026-10-16 that wrongly dropped Lourie's CAR R&R. It has been restored, and SSRN is now excluded.
 - **Result:** 113 public entries; 56 titles linked (62 verified links); 10 new links passed the independent check, 10/10 OK.
+
+## Step 5b: papers that left the list (`05b_removed.py`), added 2026-10-30
+
+Compares the previous run's `rr_public.json` (the same `prev` folder as step 4b) with the current one. Every paper no longer listed is kept in `data/rr_removed.json` across runs, with a status (the module docstring is the full rule set):
+- **pending** (not shown): waiting for a reviewer, carried to every later run until a verdict arrives. Each run lists it in `removed_to_review.json` with Crossref hints, step 4b's "page read, wording gone" record for this paper, and any current entry from the same author page and journal (possibly the same paper retitled);
+- **published:** Crossref has a journal article with the same title and author in the R&R journal itself. This is checked every run for every paper except not_removed and overrides any verdict; a reviewer can also set it;
+- **accepted:** a reviewer quotes the page or CV (accepted, conditionally accepted, forthcoming);
+- **published_elsewhere:** a reviewer confirms a different journal; a Crossref hit outside the R&R journal (e.g. a proceedings abstract) is only a hint;
+- **presumed_rejected:** a reviewer read the author's page and found the R&R wording gone with no acceptance or publication. The code accepts this verdict only if (1) step 4b recorded this paper's page as read with the wording gone in the same run (`carryover_dropped.json`, tagged with its `prev` folder); and (2) a Crossref search ran in this 5b run and found the paper in no journal (titles under 4 words cannot be searched, so they stay pending). Otherwise the paper goes back to pending. The page calls it an inference;
+- **not_removed** (not shown): a reviewer found it still listed as R&R.
+
+Reviewer verdicts go in `removed_review.json` ({title, journal, status, evidence, checked_date as YYYY-MM-DD}). Among valid verdicts dated on or after the run in which the paper left the list, the latest wins; on the same date, the later one in the file wins. A verdict about an earlier exit never applies to a later one. If a paper returns to the list and leaves again, its old history entry is replaced, even when a week was skipped. Invalid verdicts (missing field, unknown status or journal, impossible or future date) are ignored and listed under `invalid_verdicts` in `removed_to_review.json`; valid verdicts that match no paper are listed under `unmatched_verdicts`. If Crossref fails, a paper keeps its previous status that run.
+
+Step 4b counts a listed page as read only if it returned HTTP 200 with at least 300 characters of text and did not redirect to a different page; a redirect to a sign-in wall is not a read. 59 fetches in the 2026-10-28 log were HTTP 200 with less than 300 characters.
+
+Set `run_stats.json` `run_date` to the run's date before steps 5 and 5b.
+
+Backfilled for 2026-10-28 from that run's checked drops: 4 papers left the list, all accepted or published (Schoenfeld TAR and Phillips JAR conditionally accepted, Fedyk MS forthcoming, Fang TAR published). None was presumed rejected. An independent monitor re-derived the four and their statuses from the pages and Crossref on 2026-10-30. Fedyk TAR, Cong MS and Donahoo TAR were dropped as published that run but had not been on the public list before, so they do not appear.

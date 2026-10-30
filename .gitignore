@@ -6,6 +6,7 @@ __pycache__/
 # Raw crawl data (ORCID records, cohort tables, fetch logs, unreviewed candidates) stay local.
 rr-tracker/data/*
 !rr-tracker/data/rr_public.json
+!rr-tracker/data/rr_removed.json
 !rr-tracker/data/directories/
 rr-tracker/data/directories/*
 !rr-tracker/data/directories/faculty_directories.csv

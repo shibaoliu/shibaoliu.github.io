@@ -21,6 +21,9 @@ THEMES = PAPERS_DATA["themes"]
 HIDDEN = set(SITE.get("hidden_pages", []))
 TRACKER_FILE = ROOT / "rr-tracker/data/rr_public.json"
 TRACKER = json.loads(TRACKER_FILE.read_text()) if TRACKER_FILE.exists() else None
+# R&R papers that left the list since an earlier run, with why (rr-tracker/pipeline/05b_removed.py).
+REMOVED_FILE = ROOT / "rr-tracker/data/rr_removed.json"
+REMOVED = json.loads(REMOVED_FILE.read_text())["entries"] if REMOVED_FILE.exists() else []
 BY_SLUG = {p["slug"]: p for p in PAPERS}
 BASE = SITE["domain"].rstrip("/")
 
@@ -134,6 +137,11 @@ def page(title, body, active="", prefix="", description="", canonical="", preren
         ga = (f'<script async src="https://www.googletagmanager.com/gtag/js?id={gid}"></script>\n'
               f"<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}"
               f"gtag('js',new Date());gtag('config','{gid}');</script>")
+    if SITE.get("goatcounter"):
+        # GoatCounter visitor counts (no cookies). Local previews are not counted.
+        ga += (f'<script>window.goatcounter={{no_onload: location.hostname !== "{e(BASE.split("//")[-1])}"}};</script>\n'
+               f'<script data-goatcounter="https://{e(SITE["goatcounter"])}.goatcounter.com/count" '
+               f'async src="//gc.zgo.at/count.js"></script>')
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -231,6 +239,36 @@ def build_tracker():
                      "Working papers that their authors publicly list as revise-and-resubmit at the five leading "
                      "accounting journals (JAE, JAR, TAR, CAR, RAST) and Management Science.", stats)
     method = "".join(f"<li>{m}</li>" for m in T["method"])
+    status_label = {"presumed_rejected": "Presumed rejected", "published_elsewhere": "Published elsewhere",
+                    "accepted": "Accepted", "published": "Published"}
+    not_there = ("presumed_rejected", "published_elsewhere")  # did not end at the R&R journal
+    # "pending" (waiting for a reviewer) and "not_removed" entries are not shown
+
+    def removed_card(x):
+        who = "; ".join(f'{e(au["name"])} (<a href="{e(au["source_url"])}" target="_blank" rel="noopener">source</a>)'
+                        for au in x["authors"])
+        return f"""<article class="paper rr rr-gone">
+  <div class="paper-head"><span class="paper-kicker">{e(JOURNAL_NAME[x['journal']])}</span><span class="status-pill status-{'progress' if x['status'] in not_there else 'published'}">{status_label[x['status']]}{'' if x['status'] == 'published_elsewhere' else ' &middot; ' + x['journal']}</span></div>
+  <h3>{a(e(x['title']), x['paper_url'], True) if x.get('paper_url') else e(x['title'])}</h3>
+  <p class="paper-authors">{who} &middot; last listed as R&amp;R {e(x['last_listed'])}, left the list {e(x['removed_date'])}</p>
+  <p class="rr-why">{e(x['evidence'])}</p>
+</article>"""
+    group = {s: [x for x in REMOVED if x["status"] == s] for s in status_label}
+    shown = sum(len(v) for v in group.values())
+
+    def cards_or_none(xs):
+        return "".join(removed_card(x) for x in xs) or '<p class="empty-state">None so far.</p>'
+    removed = f"""<section class="rr-removed" id="left-the-list">
+      <h2 class="section-label">Left the list</h2>
+      <p class="rr-note">Papers that were on this list in an earlier run and are no longer listed as R&amp;R. Each status was checked by a reviewer, except &ldquo;Published&rdquo; when Crossref shows the article in the R&amp;R journal itself.</p>
+      <h3 class="rr-sub">Presumed rejected ({len(group["presumed_rejected"])})</h3>
+      <p class="rr-note">When the paper left the list, the author's page was read and the R&amp;R wording was gone; a reviewer then found no acceptance on the page, and a Crossref search found no publication. This is an inference, not a decision letter: the author may simply have reworded the page.</p>
+      {cards_or_none(group["presumed_rejected"])}
+      <h3 class="rr-sub">Published in another journal ({len(group["published_elsewhere"])})</h3>
+      {cards_or_none(group["published_elsewhere"])}
+      <h3 class="rr-sub">Accepted or published in the R&amp;R journal ({len(group["accepted"]) + len(group["published"])})</h3>
+      {cards_or_none(group["accepted"] + group["published"])}
+    </section>""" if shown else ""
     body = f"""{hero}
 <div class="research-toolbar">
   <div class="wrap rt-row">
@@ -255,6 +293,7 @@ def build_tracker():
 {chr(10).join(cards)}
     </div>
     <p id="rt-empty" class="empty-state" hidden>No papers match that search.</p>
+    {removed}
     <section class="rr-method">
       <h2 class="section-label">How this list is built</h2>
       <ul class="rail-list">{method}</ul>

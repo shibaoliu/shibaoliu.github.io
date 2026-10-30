@@ -250,4 +250,8 @@ pre.bib { font-family: var(--mono); font-size: .78rem; background: var(--paper-d
 /* AcctRes tracker */
 .rr blockquote { margin: .5rem 0 0; padding: .45rem .8rem; border-left: 3px solid var(--accent); background: var(--accent-soft); font-size: .86rem; color: var(--ink-soft); overflow-wrap: anywhere; }
 .rr-method { margin-top: 2.5rem; }
+.rr-removed { margin-top: 2.5rem; }
+.rr-sub { font-size: 1.05rem; margin: 1.5rem 0 .4rem; }
+.rr-note, .rr-why { font-size: .88rem; color: var(--ink-soft); }
+.rr-gone h3 { font-size: 1rem; }
 .rr-method li { font-size: .9rem; }

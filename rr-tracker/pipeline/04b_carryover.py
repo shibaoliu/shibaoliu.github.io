@@ -6,21 +6,31 @@ A new candidate inherits an earlier verdict (and the reviewer's exact title) whe
 shows the same wording: identical snippet, or identical machine-extracted title and journal on that page.
 Inherited "publish" verdicts are dated today (re-confirmed on the live page); a Crossref/OpenAlex hit from
 step 4 still overrides them. An earlier "publish" entry with no match this week is
-  - dropped, if its page was read this week (HTTP 200) and no longer shows the R&R wording;
+  - dropped, if its page was read this week (HTTP 200 with >= MIN_CHARS characters of text) and no longer shows
+    the R&R wording; these are listed in data/carryover_dropped.json for step 5b;
   - kept with its old check date, if its page could not be read this week (block, timeout).
 Writes data/rr_review.json (one verdict per current candidate) and data/review_in_new.json (to review).
 """
-import csv, datetime, json, os, re, sys, unicodedata
+import csv, datetime, json, os, re, sys, unicodedata, urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 PREV = sys.argv[1]
 TODAY = datetime.date.today().isoformat()
+# An HTTP 200 with almost no extracted text (an empty .docx, a script-only page) is not a read page: 59 such
+# fetches in the 2026-10-28 log would otherwise have counted as "wording gone".
+MIN_CHARS = 300
 
 
 def nz(s):
     s = unicodedata.normalize("NFKD", s or "")
     return re.sub(r"[^a-z0-9]+", " ", "".join(c for c in s if not unicodedata.combining(c)).lower()).strip()
+
+
+def same_page(u, v):
+    p, q = urllib.parse.urlsplit(u), urllib.parse.urlsplit(v)
+    return (re.sub(r"^www\.", "", p.netloc.lower()) == re.sub(r"^www\.", "", q.netloc.lower())
+            and p.path.rstrip("/") == q.path.rstrip("/"))
 
 
 def keys(c):
@@ -38,9 +48,11 @@ def main():
             index.setdefault(k, (cid, r))
     status = {}
     for f in csv.DictReader(open(os.path.join(DATA, "scan_fetch_log.csv"))):
-        for u in (f["url"], f.get("final_url") or ""):
-            if u:
-                status[u] = f["status"] if status.get(u) != "http200" else "http200"
+        ok = "read" if f["status"] == "http200" and int(f.get("chars") or 0) >= MIN_CHARS else f["status"]
+        fin = f.get("final_url") or f["url"]
+        # a redirect to another page (e.g. a Google sign-in wall) means the listed page itself was not read
+        for u, st in ((fin, ok), (f["url"], ok if same_page(f["url"], fin) else "redirected")):
+            status[u] = st if status.get(u) != "read" else "read"
     review, todo, matched_old = [], [], set()
     for c in cur:
         hit = next((index[k] for k in keys(c) if k in index), None)
@@ -63,12 +75,16 @@ def main():
     # earlier published entries that did not reappear this week
     nxt = max([c["candidate_id"] for c in cur] or [0])
     kept = dropped = 0
+    gone = []
     for cid, r in oldrev.items():
         if r["verdict"] != "publish" or cid in matched_old:
             continue
         oc = old[cid]
-        if status.get(oc["source_url"]) == "http200":
+        if status.get(oc["source_url"]) == "read":
             dropped += 1
+            gone.append(dict(author_name=oc["author_name"], openalex_id=oc["openalex_id"], journal=oc["journal"],
+                             title=r.get("title") or oc["title"], source_url=oc["source_url"],
+                             old_snippet=oc["snippet"], page_read=TODAY))
             print("dropped (page read, R&R wording gone): %s | %s" % (oc["author_name"], r.get("title") or oc["title"]))
             continue
         nxt += 1
@@ -81,6 +97,8 @@ def main():
     json.dump(cur, open(os.path.join(DATA, "rr_candidates.json"), "w"), indent=1, ensure_ascii=False)
     json.dump(review, open(os.path.join(DATA, "rr_review.json"), "w"), indent=1, ensure_ascii=False)
     json.dump(todo, open(os.path.join(DATA, "review_in_new.json"), "w"), indent=1, ensure_ascii=False)
+    json.dump(dict(prev=os.path.abspath(PREV), date=TODAY, entries=gone), open(os.path.join(DATA, "carryover_dropped.json"), "w"),
+              indent=1, ensure_ascii=False)
     print("current candidates %d: inherited %d, new to review %d, stale %d; earlier entries kept (unreadable) %d, "
           "dropped (wording gone) %d" % (len(cur) - kept, sum(1 for r in review if r.get("carried_from")) - kept,
                                          len(todo), sum(1 for r in review if r["reason"].startswith("already published")),
